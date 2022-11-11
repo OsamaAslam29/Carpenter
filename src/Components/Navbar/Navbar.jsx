@@ -23,7 +23,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="mobile-menu">
-                    
+
                 </div>
 
             </div>
