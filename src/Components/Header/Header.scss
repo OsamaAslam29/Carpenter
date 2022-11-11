@@ -1,0 +1,56 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0px;
+    font-size: 18px;
+
+    .left-section {
+        display: flex;
+        gap: 4rem;
+
+
+        .locatin {
+            display: flex;
+            gap: .7rem;
+            align-items: center;
+        }
+
+        .email {
+            display: flex;
+            gap: .7rem;
+            align-items: center;
+
+
+        }
+
+    }
+
+    .right-section {
+        display: flex;
+        gap: 5rem;
+
+        .phone {
+            display: flex;
+            gap: .7rem;
+            align-items: center;
+
+
+        }
+
+        .social {
+            display: flex;
+            gap: .7rem;
+            align-items: center;
+
+
+        }
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+}
