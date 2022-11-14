@@ -5,16 +5,18 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
+import Services from './Components/Services/Services';
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Navbar />
       <Home />
-      <Cards />
+      <Cards />px
       <BioGraphy/>
-      <Footer />
+      <Footer /> */}
+      <Services/>
 
       
     </>
