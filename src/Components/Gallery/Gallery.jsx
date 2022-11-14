@@ -1,20 +1,20 @@
 import React from 'react'
-import './Services.scss'
+import './Gallery.scss'
 
-const Services = () => {
+const Gallery = () => {
   return (
-    <div className='services-container'>
+    <div className='gallery-container'>
         <div className="content">
           <div className="flex-text">
             <div></div>
-            <h3>Our Work</h3>
+            <h3>Who We Are?</h3>
           </div>
           <div className="data">
-            <h4>Gallery</h4>
+            <h4>Services We <span>Offer</span></h4>
           </div>
         </div>    
     </div>
   )
 }
 
-export default Services
+export default Gallery
