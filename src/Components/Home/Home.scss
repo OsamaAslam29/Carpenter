@@ -1,0 +1,58 @@
+.home-container {
+    height: 100vh;
+    background: url('../../Assets/background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left-container {
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        .content {
+            font-size: 60px;
+            font-weight: 600;
+            font-family: "Nunito",sans-serif !important;
+            color: var(--primary-color) !important
+        }
+
+        .para {
+            font-size: 30px !important;
+            font-weight: 700 !important;
+            color: #fff;
+        }
+
+        .btn {
+            margin-top: 2.5rem;
+            a {
+                font-size: 16px;
+                font-weight: 700;
+                padding: 15px 35px;
+                color: #fff;
+                border: 2px solid var(--primary-color);
+                background-color: var(--primary-color) !important;
+                border-radius: 3px;
+            }
+        }
+    }
+    .right-container{
+        height: 100vh;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            padding: 15px 35px;
+            color: #fff;
+            border: 2px solid var(--primary-color);
+            background-color: var(--primary-color) !important;
+            border-radius: 50%;
+        }
+    }
+}

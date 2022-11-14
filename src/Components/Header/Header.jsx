@@ -15,11 +15,11 @@ const Header = () => {
         <div className='header-container'>
             <div className="left-section">
                 <div className="locatin">
-                    <MdLocationPin className='icon' style={{fontSize:"30px"}}/>
+                    <MdLocationPin className='icon' style={{ fontSize: "30px" }} />
                     <div>Woodstock GA</div>
                 </div>
                 <div className="email">
-                    <IoIosMail className='icon' style={{fontSize:"30px"}}/>
+                    <IoIosMail className='icon' style={{ fontSize: "30px" }} />
                     <div>ManuelCotrich@firststrikepestelimination.com</div>
                 </div>
             </div>
@@ -29,9 +29,9 @@ const Header = () => {
                     <div>(470) 999-6819</div>
                 </div>
                 <div className="social">
-                    <AiFillYoutube className='icon' style={{fontSize:"30px"}}/>
+                    <AiFillYoutube className='icon' style={{ fontSize: "30px" }} />
                     <BsGlobe className='icon' />
-                    <AiFillInstagram className='icon' style={{fontSize:"30px"}}/>
+                    <AiFillInstagram className='icon' style={{ fontSize: "30px" }} />
                     <FaYelp className='icon' />
                     <BsGoogle className='icon' />
                     <FaFacebookF className='icon' />
