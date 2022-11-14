@@ -87,6 +87,27 @@ const BioGraphy = () => {
           Second, clean the kitchen and dishes and vacuum every day. Moreover, fill up the cracks in the foundation of the building, windows, doors, and paneling. So, any ant cannot enter inside and cause damage. After all, it is said that precaution is better than cure. Indeed, timely care and readiness can keep anyone's house free of insects.
         </p>
       </div>
+      <div className="section">
+        <h2 className="heading">
+          Frequently Asked Questions
+        </h2>
+        <h3 className="sub-heading">
+          How Can I Stop Carpenter Ants Invading into My Home?
+        </h3>
+        <p>
+          Before deciding to call for a professional <strong>carpenter ant treatment in Woodstock GA</strong> , there are certain things that one can do by oneself. For instance, one can take out the damaged furniture from the house, and the damaged and old wood should also be removed from the surrounding residence.<br />
+
+          Additionally, cracks, which are appeared in the building's structure, should fill as soon as possible. After doing all those things, if the insects do not stop and continuously invade inside, it is time to call us at <a href="#">(315) 731-7928 </a> because we are a professional company that gives affordable <strong> carpenter ant treatment costs</strong> in Woodstock GA.
+        </p>
+      </div>
+      <div className="section">
+        <h2 className="heading">
+          Where Do the Ants Live Mostly?
+        </h2>
+        <p>
+          Most of the time, they live in woods, dead trees, and humid environments. However, they enter the room for searching food. Food particles attract them actively. Further, ants are found in domestic places around sinks, bathtubs, poorly sealed windows, and door frames. Therefore, keep an eye on all those areas often and on so that the place remains safe.
+        </p>
+      </div>
 
 
 

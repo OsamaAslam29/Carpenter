@@ -50,9 +50,17 @@
             font-size: 35px;
             margin-bottom: 10px;
         }
+        .sub-heading{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        
         p{
             color: rgb(12, 11, 11);
             line-height: 22px;
+            a{
+                color: var(--primary-color);
+            }
            
         }
         .list{
