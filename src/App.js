@@ -1,4 +1,5 @@
 import './App.scss';
+import BioGraphy from './Components/BioGraphy/BioGraphy';
 import Cards from './Components/Cards/Cards';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
@@ -12,7 +13,9 @@ function App() {
       <Navbar/>
       <Home/> */}
       {/* <Cards/> */}
-      <Footer/>
+      {/* <Footer/> */}
+      <BioGraphy/>
+      
       
     </>
   );
