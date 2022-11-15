@@ -29,6 +29,11 @@ const Review = () => {
                     <h4>Testimo<span>nials</span></h4>
                 </div>
             </div>
+            <div className="flex-testimonial">
+                <div className="testimonail-card">
+                    
+                </div>
+            </div>
 
         </div>
     )

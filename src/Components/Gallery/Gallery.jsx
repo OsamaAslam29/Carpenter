@@ -7,12 +7,14 @@ const Gallery = () => {
         <div className="content">
           <div className="flex-text">
             <div></div>
-            <h3>Who We Are?</h3>
+            <h3>Our Work</h3>
           </div>
           <div className="data">
-            <h4>Services We <span>Offer</span></h4>
+            <h4>Gallery</h4>
           </div>
-        </div>    
+        </div>
+        <div className="flex-images">
+          </div>    
     </div>
   )
 }

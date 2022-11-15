@@ -101,7 +101,7 @@
             width: 600px;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.5rem;
             padding: 30px;
             border-top: 2px solid var(--primary-color);
             border-bottom: 2px solid var(--primary-color);
@@ -121,9 +121,11 @@
             .textarea{
                 width: 100%;
                 border: 1px solid rgb(214 215 216 / 60%);
+                padding: 10px;
             }
             .send-button{
-                margin-top: 8px;
+                margin-top: 12px;
+                text-align: center;
                 a{
                     padding: 12px 32px;
                     background-color:var(--primary-color);

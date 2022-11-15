@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 0px;
     .content{
         display: flex;
         flex-direction: column;
@@ -37,6 +37,44 @@
             }
         }
     }
+       .flex-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: .7rem;
+        padding: 3rem 0;
+
+        .card {
+            min-height: 420px;
+            // min-width: 280px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 40px 17px;
+            border: 1px solid rgb(180, 178, 178);
+            .logo{
+                width: 75px;
+                height: 75px;
+            
+            }
+
+            .heading {
+                font-size: 25px !important;
+                font-weight: 700 !important;
+                text-align: center;
+
+            }
+
+            .para {
+                font-weight: 400;
+                font-size: 16px;
+                color: rgb(53, 52, 52);
+                text-align: justify;
+            }
+        }
+
+      
+}
 
     
 }
