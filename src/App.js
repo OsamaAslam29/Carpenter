@@ -13,10 +13,10 @@ import Services from './Components/Services/Services';
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Navbar />
-      <Home />
-      <Cards />px
+      <Home /> */}
+      {/* <Cards /> */}
       <BioGraphy/>
       <Services/>
       <Gallery/>

@@ -1,73 +1,87 @@
-.Biography-container{
+.Biography-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+
     .flex-content {
         display: flex;
         justify-content: center;
+
         img {
             width: 555px;
             height: 460px;
         }
-    
+
         .content {
             margin-top: 2rem;
             padding: 10px 50px;
+
             .flex-text {
                 display: flex;
                 gap: 1rem;
                 align-items: center;
+
                 div {
                     width: 40px;
                     height: 3px;
                     background-color: var(--primary-color);
                 }
-    
+
                 h3 {
                     color: var(--primary-color);
                 }
             }
-    
+
             .data {
                 h4 {
                     font-size: 50px;
                     font-weight: 700;
                 }
-    
+
                 p {
                     line-height: 20px;
                     margin-top: 1rem;
                     color: rgb(46, 45, 45);
+                    text-align: justify;
+
                 }
             }
-    
+
         }
-    
+
     }
-    .section{
+
+    .section {
         margin-top: 1rem;
-        .heading{
+
+        .heading {
             font-size: 35px;
             margin-bottom: 10px;
         }
-        .sub-heading{
+
+        .sub-heading {
             font-size: 30px;
             margin-bottom: 10px;
         }
-        
-        p{
+
+        p {
             color: rgb(12, 11, 11);
             line-height: 22px;
-            a{
+            text-align: justify;
+
+            a {
                 color: var(--primary-color);
             }
-           
+
         }
-        .list{
+
+        .list {
             margin: 10px 35px;
-            li{
-                list-style:disc;
-                a{
+
+            li {
+                list-style: disc;
+
+                a {
                     color: blue;
                     line-height: 22px;
 
@@ -76,4 +90,3 @@
         }
     }
 }
-
