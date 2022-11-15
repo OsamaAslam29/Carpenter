@@ -10,21 +10,31 @@ import Navbar from './Components/Navbar/Navbar';
 import Review from './Components/Review/Review';
 import Services from './Components/Services/Services';
 
+import Recaptcha from "react-google-recaptcha"
+
 function App() {
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
   return (
     <>
       {/* <Header />
       <Navbar />
       <Home /> */}
       {/* <Cards /> */}
-      <BioGraphy/>
-      <Services/>
-      <Gallery/>
-      <Review/>
-      <Contact/>
+      <BioGraphy />
+      <Services />
+      <Gallery />
+      <Review />
+      <Contact />
+      <Recaptcha
+        sitekey="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"
+        onChange={onChange}
+      />,
       <Footer />
 
-      
+
     </>
   );
 }
