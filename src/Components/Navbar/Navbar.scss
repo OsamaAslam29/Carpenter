@@ -5,19 +5,42 @@
     justify-content: center;
     gap: 10rem;
     padding: 25px 0px;
+    border: 1px solid red;
+
+    @media screen and (max-width:1300px) {
+        padding: 20px 0px;
+        gap: 7rem;
+
+
+    }
 
     .web-menu {
         display: flex;
         gap: 6.5rem;
+        @media screen and (max-width:1300px) {
+            gap: 5rem;
+        }
+        @media screen and (max-width:1300px) {
+            display: none;
+        }
+
 
         .left {
             display: flex;
             gap: 3rem;
             align-items: center;
-            a{
+            @media screen and (max-width:1300px) {
+                gap: 2rem;
+            }
+
+            a {
                 font-size: 18px;
                 color: black;
                 font-weight: bold;
+
+                @media screen and (max-width:1300px) {
+                    font-size: 15px;
+                }
             }
         }
 
@@ -30,7 +53,15 @@
                 border: 2px solid var(--primary-color);
                 background-color: var(--primary-color) !important;
                 border-radius: 3px;
+
+                @media screen and (max-width:1300px) {
+                    padding: 12px 25px;
+                    font-size: 15px;
+
+                }
             }
         }
     }
+    
+
 }
