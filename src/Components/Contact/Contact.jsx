@@ -10,7 +10,7 @@ const Contact = () => {
         console.log("Captcha value:", value);
       }
     return (
-        <div className='contact-container'>
+        <div className='contact-container' id='contact'>
             <div className="content">
                 <div className="flex-text">
                     <div></div>

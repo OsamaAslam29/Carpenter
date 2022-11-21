@@ -7,7 +7,7 @@ import customer from "../../Assets/customer.svg"
 
 const Review = () => {
     return (
-        <div className='review-container'>
+        <div className='review-container' id='review'>
             <div className="content">
                 <div className="flex-text">
                     <div></div>

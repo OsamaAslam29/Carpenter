@@ -3,7 +3,7 @@ import './Services.scss'
 import box from '../../Assets/box.svg'
 const Services = () => {
   return (
-    <div className='services-container'>
+    <div className='services-container' id='services'>
       <div className="content">
         <div className="flex-text">
           <div></div>

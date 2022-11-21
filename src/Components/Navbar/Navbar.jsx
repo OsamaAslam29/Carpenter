@@ -36,19 +36,22 @@ const Navbar = () => {
                 </div>
                 <div className="nav">
                     <div className="mobile_icon" to="/Home">
-                        <div>Home</div>
+                        <a href="#home">Home</a>
                     </div>
                     <div className="mobile_icon" to="/Home">
-                        <div style={{ paddingTop: "6px" }}>About</div>
+                        <a href="#about">About Us</a>
                     </div>
                     <div className="mobile_icon" to="/Home">
-                        <div>Services</div>
+                        <a href="#services">Services</a>
                     </div>
                     <div className="mobile_icon" to="/Home">
-                        <div>Projects</div>
+                        <a href="#gallery">Gallery</a>
                     </div>
                     <div className="mobile_icon" to="/Home">
-                        <div>Contact Me</div>
+                        <a href="#review">Reviews</a>
+                    </div>
+                    <div className="mobile_icon" to="/Home">
+                        <a href="#contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -64,12 +67,12 @@ const Navbar = () => {
             <div className="menu">
                 <div className="web-menu">
                     <div className='left'>
-                        <a href="#">Home</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Services</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Reviews</a>
-                        <a href="#">Contact Us</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#review">Reviews</a>
+                        <a href="#contact">Contact Us</a>
                     </div>
                     <div className='right'>
                         <a href="#">Contact Us</a>

@@ -4,7 +4,7 @@ import './Home.scss'
 
 const Home = () => {
   return (
-    <div className='home-container'>
+    <div className='home-container' id='home'>
       <div className="left-container">
         <div className="content">Carpenter Ant Treatment in  Woodstock GA</div>
         <div className="para">First Strike Pest Elimination</div>

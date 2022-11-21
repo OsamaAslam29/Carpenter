@@ -4,7 +4,7 @@ import search from '../../Assets/search.svg'
 
 const Cards = () => {
     return (
-        <div className='card-container'>
+        <div className='card-container' id='about'>
             <div className="heading-container">WHY CHOOSE <span>US</span></div>
             <div className="flex-cards">
                 <div className="card">

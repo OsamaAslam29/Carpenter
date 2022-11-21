@@ -3,7 +3,7 @@ import './Gallery.scss'
 
 const Gallery = () => {
   return (
-    <div className='gallery-container'>
+    <div className='gallery-container' id='gallery'>
         <div className="content">
           <div className="flex-text">
             <div></div>
