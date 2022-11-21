@@ -14,15 +14,20 @@ import { FaAngleRight } from 'react-icons/fa';
 const Footer = () => {
     return (
         <>
-
+            
             <div className='footer-container'>
+                <div className="footer">
                 <div className="contact">
                     <div className="heading">Carpenter Ant Treatment in <br /> Woodstock GA </div>
                     <div className="para">First Strike Pest Elimination</div>
                     <div className="info">
                         <h3>Phone: <span> (470) 999-6819</span></h3>
-                        <h3>Email: <span>ManuelCotrich@firststrikepestelimination.com</span></h3>
-                        <h3>Text: <span> (470) 999-6819</span></h3>
+                        <div className="flex">
+                        <h3>Email: </h3>
+                        <span>ManuelCotrich@firststrikepestelimination.com</span>
+
+                        </div>
+                        <h3>Text: &nbsp;&nbsp;<span> (470) 999-6819</span></h3>
                     </div>
                     <div className="icons">
                         <a href="">
@@ -78,7 +83,8 @@ const Footer = () => {
 
                 </div>
                 <div className="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52846.70171199795!2d-84.46488!3d34.122827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f517173d18a0fd%3A0x9d4c3024f39900f7!2sWoodstock%2C%20GA!5e0!3m2!1sen!2sus!4v1668440279401!5m2!1sen!2sus" width="350" height="250"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52846.70171199795!2d-84.46488!3d34.122827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f517173d18a0fd%3A0x9d4c3024f39900f7!2sWoodstock%2C%20GA!5e0!3m2!1sen!2sus!4v1668440279401!5m2!1sen!2sus" width="340" height="250"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 </div>
             </div>
             <div className="footer-bar">

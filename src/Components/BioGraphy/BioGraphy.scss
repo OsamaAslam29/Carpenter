@@ -18,6 +18,7 @@
         img {
             width: 555px;
             height: 460px;
+            object-fit: cover;
 
             @media screen and (max-width:1200px) {
                 width: 480px;
