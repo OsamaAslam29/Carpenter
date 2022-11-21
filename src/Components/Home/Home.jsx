@@ -1,8 +1,12 @@
 import React from 'react'
 import './Home.scss'
+import ReactDOM from 'react-dom'
+import ModalVideo from 'react-modal-video'
+import { useState } from 'react'
 
 
 const Home = () => {
+  const [isOpen, setOpen] = useState(false)
   return (
     <div className='home-container' id='home'>
       <div className="left-container">
@@ -13,9 +17,11 @@ const Home = () => {
         </div>
       </div>
       <div className="right-container">
-        <div className="video-button">
-          <a href="https://youtu.be/lP2FJCJlsQY">video</a>
-        </div>
+        <React.Fragment>
+          <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+
+          <button className="btn-primary" onClick={() => setOpen(true)}>VIEW DEMO</button>
+        </React.Fragment>
       </div>
     </div>
   )

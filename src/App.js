@@ -19,7 +19,7 @@ function App() {
 
       <Header />
       <Navbar />
-      {/* <Home /> */}
+      <Home />
       <Cards />
       <BioGraphy />
       <Services />
