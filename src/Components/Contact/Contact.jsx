@@ -64,7 +64,7 @@ const Contact = () => {
                         <input type="text" name="" id="" placeholder='Subect' />
                     </div>
                     <div className="textarea">
-                        <textarea name="" id="" cols="65" rows="10"></textarea>
+                        <textarea name="" id=""></textarea>
                     </div>
                     <div className="recapcha">
                         <Recaptcha

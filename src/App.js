@@ -14,8 +14,8 @@ function App() {
 
   return (
     <>
-      {/* <Header />
-      <Navbar /> */}
+      {/* <Header /> */}
+      <Navbar />
       {/* <Home /> */}
       <Cards />
        <BioGraphy />

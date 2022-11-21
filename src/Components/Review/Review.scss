@@ -95,9 +95,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.2rem;
         padding: 1.2rem 0px;
-        @media screen and (max-width: 990px) {
+        @media screen and (max-width: 1200px) {
             display: flex;
             flex-direction: column;
+            padding: 1.2rem 20px;
+
         }
             @media screen and (max-width:650px) {
                 padding: 1.2rem 20px;
