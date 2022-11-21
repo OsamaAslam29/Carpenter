@@ -27,8 +27,8 @@ const Contact = () => {
                             <FaPhoneVolume className='icon' />
                         </div>
                         <div className="flex-call">
-                            <h2>Call Us</h2>
-                            <a>(470) 999-6819</a>
+                            <h5>Call Us</h5>
+                            <p>(470) 999-6819</p>
                         </div>
                     </div>
                     <div className="call">
@@ -36,8 +36,8 @@ const Contact = () => {
                             <FaEnvelopeOpenText className='icon' />
                         </div>
                         <div className="flex-call">
-                            <h2>Mail Us</h2>
-                            <a>ManuelCotrich@firststrikepestelimination.com</a>
+                            <h5>Mail Us</h5>
+                            <p>ManuelCotrich@firststrikepestelimination.com</p>
                         </div>
                     </div>
                     <div className="call">
@@ -45,8 +45,8 @@ const Contact = () => {
                             <FaMapMarkerAlt className='icon' />
                         </div>
                         <div className="flex-call">
-                            <h2>Office Address</h2>
-                            <a>Woodstock GA</a>
+                            <h5>Office Address</h5>
+                            <p>Woodstock GA</p>
                         </div>
                     </div>
                     <div className="video-section">

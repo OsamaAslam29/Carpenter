@@ -6,10 +6,25 @@
     align-items: center;
     padding: 4rem 0;
 
+    @media screen and (max-width: 1300px) {
+        padding: 3rem 0;
+    }
+
     .heading-container {
         padding: 50px 20px;
         font-size: 50px;
         font-weight: 700;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 40px;
+            padding: 40px 20px;
+        }
+        @media screen and (max-width: 650px) {
+            font-size: 30px;
+            padding: 20px 20px;
+
+
+        }
 
         span {
             color: var(--primary-color);
@@ -20,26 +35,39 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 1.2rem;
+        padding: 0px 0px;
+
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+            max-width: 600px;
+        }
+        @media screen and (max-width: 650px) {
+            grid-template-columns: 1fr;
+            padding: 0px 20px;
+        }
 
         .card {
             min-height: 370px;
-            // min-width: 280px;
             display: flex;
             align-items: center;
             flex-direction: column;
             gap: 1rem;
             padding: 40px 17px;
             border: 1px solid rgb(180, 178, 178);
-            .logo{
+
+            .logo {
                 width: 75px;
                 height: 75px;
-            
+
             }
 
             .heading {
                 font-size: 25px !important;
                 font-weight: 700 !important;
                 text-align: center;
+                @media screen and (max-width:650px) {
+                    font-size: 20px !important;
+                }
 
             }
 
@@ -50,14 +78,5 @@
                 text-align: justify;
             }
         }
-
-    //     .card:hover {
-    //         background-image: linear-gradient(to top, #D44745 50%, transparent 45%);
-    //         background-position: 0 100%;
-    //         color: #fff;
-    //         fill: #fff;
-    //         transition: background-position 1s, color 1s ease, border-color 1s ease, fill 1s ease;
-        
-    // }
-}
+    }
 }

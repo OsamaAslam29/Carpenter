@@ -14,16 +14,16 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Navbar />
-      <Home />
-      {/* <Cards />
-      <BioGraphy />
+      {/* <Header />
+      <Navbar /> */}
+      {/* <Home /> */}
+      <Cards />
+       <BioGraphy />
       <Services />
-      <Gallery />
-      <Review />
+     {/* <Gallery /> */}
+        <Review />
       <Contact />
-      <Footer /> */}
+      {/*<Footer /> */}
 
 
     </>
