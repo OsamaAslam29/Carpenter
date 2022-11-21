@@ -14,14 +14,17 @@ function App() {
 
   return (
     <>
+      {/* 1.	https://firmtechservices.com/199-Carpenter-Ant-Treatment-Woodstock-GA
+      2.	https://weblymart.com/landpage/dummy/100-FTS-General-Contractors-Services */}
+
       <Header />
       <Navbar />
       <Home />
       <Cards />
-       <BioGraphy />
+      <BioGraphy />
       <Services />
-     <Gallery />
-        <Review />
+      <Gallery />
+      <Review />
       <Contact />
       <Footer />
 

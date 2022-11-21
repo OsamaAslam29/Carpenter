@@ -75,7 +75,7 @@ const Navbar = () => {
                         <a href="#contact">Contact Us</a>
                     </div>
                     <div className='right'>
-                        <a href="#">Contact Us</a>
+                        <a href="tel:(470) 999-6819">Contact Us</a>
                     </div>
                 </div>
                 <div className="mobile_menu">

@@ -14,11 +14,9 @@ const Home = () => {
       </div>
       <div className="right-container">
         <div className="video-button">
-          <a href="#">video</a>
+          <a href="https://youtu.be/lP2FJCJlsQY">video</a>
         </div>
       </div>
-
-
     </div>
   )
 }

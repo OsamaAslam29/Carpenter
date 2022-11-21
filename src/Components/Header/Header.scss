@@ -20,6 +20,9 @@
     .left-section {
         display: flex;
         gap: 4rem;
+        a{
+            color: #fff;
+        }
         @media screen and (max-width:1300px) {
             gap: 2rem;
         }
@@ -38,10 +41,12 @@
             display: flex;
             gap: .7rem;
             align-items: center;
+            
             @media screen and (max-width:1300px) {
                 gap: .4rem;
+                
             }
-
+            
 
         }
 
@@ -56,6 +61,9 @@
         @media screen and (max-width:990px) {
             padding-right: 125px;
         }
+        a{
+            color: #fff;
+        }
 
         .phone {
             display: flex;
@@ -64,6 +72,7 @@
             @media screen and (max-width:1300px) {
                 gap: .5rem;
             }
+           
 
 
         }
@@ -77,6 +86,9 @@
             }
             @media screen and (max-width:990px) {
                 gap: 1rem;
+            }
+            a{
+                color: #fff;
             }
 
 
