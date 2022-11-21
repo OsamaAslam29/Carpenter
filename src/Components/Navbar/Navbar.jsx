@@ -53,6 +53,9 @@ const Navbar = () => {
                     <div className="mobile_icon" to="/Home">
                         <a href="#contact">Contact Us</a>
                     </div>
+                    <div className='right'>
+                        <a href="tel:(470) 999-6819">Contact Us</a>
+                    </div>
                 </div>
             </div>
 
