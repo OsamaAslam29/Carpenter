@@ -12,7 +12,6 @@ const Home = () => {
           <a href="#">Call Now</a>
         </div>
       </div>
-{/* <p>https://firmtechservices.com/199-Carpenter-Ant-Treatment-Woodstock-GA</p> */}
       <div className="right-container">
         <div className="video-button">
           <a href="#">video</a>

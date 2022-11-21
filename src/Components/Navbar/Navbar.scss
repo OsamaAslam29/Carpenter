@@ -10,7 +10,10 @@
     @media screen and (max-width:1300px) {
         padding: 20px 0px;
         gap: 7rem;
-
+    }
+    @media screen and (max-width:990px) {
+        justify-content: space-between;
+        padding: 0px 30px;
 
     }
 
@@ -20,7 +23,7 @@
         @media screen and (max-width:1300px) {
             gap: 5rem;
         }
-        @media screen and (max-width:1300px) {
+        @media screen and (max-width:990px) {
             display: none;
         }
 
@@ -62,6 +65,24 @@
             }
         }
     }
+    .mobile_menu{
+        display: none;
+        @media screen and (max-width:990px) {
+            display: block;
+        }
+    }
     
 
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        padding: 40px;
+        img{
+
+        }
+    }
 }

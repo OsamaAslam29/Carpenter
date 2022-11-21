@@ -1,10 +1,13 @@
 .home-container {
-    height: 100vh;
     background: url('../../Assets/background.jpg');
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    @media screen and (max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+  
     .left-container {
         height: 100vh;
         width: 50%;
@@ -41,10 +44,13 @@
     }
     .right-container{
         height: 100vh;
-        width: 40%;
+        width: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 990px) {
+            align-items: none;
+        }
         a {
             font-size: 16px;
             font-weight: 700;
