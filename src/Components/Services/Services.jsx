@@ -16,7 +16,7 @@ const Services = () => {
       </div>
       <div className="flex-cards">
         <div className="card">
-      <div className="back_drop"></div>
+          <div className="back_drop"></div>
           <div className="logo">
             <img src={box} alt="error" />
           </div>
@@ -24,6 +24,7 @@ const Services = () => {
           <div className="para">We are an experienced bee removal company from residential locations.</div>
         </div>
         <div className="card">
+        <div className="back_drop"></div>
           <div className="logo">
             <img src={box} alt="" />
           </div>
@@ -31,6 +32,7 @@ const Services = () => {
           <div className="para">Getting rid of bugs is easy now, as we are here to deal professionally.</div>
         </div>
         <div className="card">
+        <div className="back_drop"></div>
           <div className="logo">
             <img src={box} alt="" />
           </div>
@@ -38,6 +40,7 @@ const Services = () => {
           <div className="para">Now the danger of wasps can be tamed with the help of our professional workers</div>
         </div>
         <div className="card">
+        <div className="back_drop"></div>
           <div className="logo">
             <img src={box} alt="" />
           </div>

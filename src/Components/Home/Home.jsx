@@ -20,8 +20,8 @@ const Home = () => {
         <React.Fragment>
           <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
           {/* <button className="btn-primary button pulseBox" onClick={() => setOpen(true)}>VIEW DEMO</button> */}
-          <div class="startContainer">
-            <button class="button pulseBox" onClick={() => setOpen(true)}><AiOutlineCaretRight className='icon'/> </button>
+          <div className="startContainer">
+            <button className="button pulseBox" onClick={() => setOpen(true)}><AiOutlineCaretRight className='icon'/> </button>
           </div>
         </React.Fragment>
       </div>
