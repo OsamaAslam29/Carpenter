@@ -16,6 +16,7 @@ const Services = () => {
       </div>
       <div className="flex-cards">
         <div className="card">
+      <div className="back_drop"></div>
           <div className="logo">
             <img src={box} alt="error" />
           </div>
