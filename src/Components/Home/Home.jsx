@@ -1,8 +1,8 @@
 import React from 'react'
 import './Home.scss'
-import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
 import { useState } from 'react'
+import { AiOutlineCaretRight } from 'react-icons/ai';
 
 
 const Home = () => {
@@ -19,8 +19,10 @@ const Home = () => {
       <div className="right-container">
         <React.Fragment>
           <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
-
-          <button className="btn-primary" onClick={() => setOpen(true)}>VIEW DEMO</button>
+          {/* <button className="btn-primary button pulseBox" onClick={() => setOpen(true)}>VIEW DEMO</button> */}
+          <div class="startContainer">
+            <button class="button pulseBox" onClick={() => setOpen(true)}><AiOutlineCaretRight className='icon'/> </button>
+          </div>
         </React.Fragment>
       </div>
     </div>
