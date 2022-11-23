@@ -96,15 +96,16 @@
             }
 
             &:hover {
+                color: white;
+
                 .back_drop {
                     margin-top: 0;
                 }
+
                 .icon {
                     fill: white;
                 }
-                .card{
-                    color: white;
-                }
+
             }
         }
     }
