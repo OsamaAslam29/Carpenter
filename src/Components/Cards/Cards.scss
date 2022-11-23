@@ -19,6 +19,7 @@
             font-size: 40px;
             padding: 40px 20px;
         }
+
         @media screen and (max-width: 650px) {
             font-size: 30px;
             padding: 20px 20px;
@@ -41,6 +42,7 @@
             grid-template-columns: 1fr 1fr;
             max-width: 600px;
         }
+
         @media screen and (max-width: 650px) {
             grid-template-columns: 1fr;
             padding: 0px 20px;
@@ -70,12 +72,9 @@
                 margin-top: 420px;
                 z-index: -1;
             }
-            &:hover {
-                .back_drop {
-                    margin-top: 0;
-                }
-            }
-            .icon{
+
+            .icon {
+                transition: all 1s;
                 fill: var(--primary-color);
             }
 
@@ -83,6 +82,7 @@
                 font-size: 25px !important;
                 font-weight: 700 !important;
                 text-align: center;
+
                 @media screen and (max-width:650px) {
                     font-size: 20px !important;
                 }
@@ -94,9 +94,18 @@
                 font-size: 16px;
                 text-align: justify;
             }
-        }
-        .card:hover {
-            color: white;
+
+            &:hover {
+                .back_drop {
+                    margin-top: 0;
+                }
+                .icon {
+                    fill: white;
+                }
+                .card{
+                    color: white;
+                }
+            }
         }
     }
 }
