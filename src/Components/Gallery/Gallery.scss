@@ -104,6 +104,11 @@
                 left: 20px;
                 color: #fff;
                 font-size: 35px;
+                @media screen and (max-width: 650px) {
+                    left: 35px;
+                bottom: 20px;
+
+                }
             }
         }
     }

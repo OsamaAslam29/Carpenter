@@ -4,10 +4,8 @@
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    background-color: #fff;
     padding: 25px 0px;
-   
-    
-   
 
     @media screen and (max-width:1300px) {
         padding: 20px 0px;
@@ -83,7 +81,7 @@
 
 }
 
-.color{
+.color {
     position: fixed;
     top: 0px;
     background-color: #fff;
@@ -91,6 +89,7 @@
     box-shadow: 0 0 3px 0 #0000004d;
 
 }
+
 .main {
     display: flex;
     flex-direction: column;
@@ -118,6 +117,7 @@
 
         .right {
             margin: 1rem;
+
             a {
                 color: white;
                 font-size: 18px;

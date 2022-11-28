@@ -5,6 +5,8 @@ import logo from '../../Assets/logo.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Fade from 'react-reveal/Fade';
+
 
 const Navbar = () => {
 
@@ -66,61 +68,62 @@ const Navbar = () => {
     );
 
 
-   
+
     const changeNavBar = () => {
         if (window.scrollY >= 210) {
             setBackground(true)
         } else {
-            setBackground(false)      
+            setBackground(false)
         }
     }
     window.addEventListener("scroll", changeNavBar);
 
     return (
-        <div className={background ? 'nav-container color':'nav-container'}>
-            <div className="logo">
-                <img src={logo} alt="" />
-            </div>
-            <div className="menu">
-                <div className="web-menu">
-                    <div className='left'>
-                        <a href="#home">Home</a>
-                        <a href="#about">About Us</a>
-                        <a href="#services">Services</a>
-                        <a href="#gallery">Gallery</a>
-                        <a href="#review">Reviews</a>
-                        <a href="#contact">Contact Us</a>
-                    </div>
-                    <div className='right'>
-                        <a href="tel:(470) 999-6819">Contact Us</a>
-                    </div>
+        <Fade top>
+            <div className={background ? 'nav-container color' : 'nav-container'}>
+                <div className="logo">
+                    <img src={logo} alt="" />
                 </div>
-                <div className="mobile_menu">
-                    <div className='ham_none'>
-                        {['top'].map((anchor) => (
-                            <React.Fragment key={anchor}>
+                <div className="menu">
+                    <div className="web-menu">
+                        <div className='left'>
+                            <a href="#home">Home</a>
+                            <a href="#about">About Us</a>
+                            <a href="#services">Services</a>
+                            <a href="#gallery">Gallery</a>
+                            <a href="#review">Reviews</a>
+                            <a href="#contact">Contact Us</a>
+                        </div>
+                        <div className='right'>
+                            <a href="tel:(470) 999-6819">Contact Us</a>
+                        </div>
+                    </div>
+                    <div className="mobile_menu">
+                        <div className='ham_none'>
+                            {['top'].map((anchor) => (
+                                <React.Fragment key={anchor}>
 
-                                <div className="menu">
-                                    <MenuIcon onClick={toggleDrawer(anchor, true)} style={{ fontSize: "30px" }} />
-                                </div>
-                                <SwipeableDrawer
-                                    anchor={anchor}
-                                    open={state[anchor]}
-                                    onClose={toggleDrawer(anchor, false)}
-                                    onOpen={toggleDrawer(anchor, true)}
-                                >
-                                    {list(anchor)}
-                                </SwipeableDrawer>
-                            </React.Fragment>
-                        ))}
+                                    <div className="menu">
+                                        <MenuIcon onClick={toggleDrawer(anchor, true)} style={{ fontSize: "30px" }} />
+                                    </div>
+                                    <SwipeableDrawer
+                                        anchor={anchor}
+                                        open={state[anchor]}
+                                        onClose={toggleDrawer(anchor, false)}
+                                        onOpen={toggleDrawer(anchor, true)}
+                                    >
+                                        {list(anchor)}
+                                    </SwipeableDrawer>
+                                </React.Fragment>
+                            ))}
+                        </div>
+
+
                     </div>
 
-
                 </div>
-
             </div>
-
-        </div>
+        </Fade>
     )
 }
 

@@ -16,7 +16,7 @@ function App() {
     <>
 
       <Header />
-      <Navbar /> 
+      <Navbar />
       <Home />
       <Cards />
       <BioGraphy />
@@ -25,7 +25,6 @@ function App() {
       <Review />
       <Contact />
       <Footer />
-
 
     </>
   );

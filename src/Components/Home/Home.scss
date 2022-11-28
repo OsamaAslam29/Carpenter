@@ -1,5 +1,6 @@
 .home-container {
-    background: url('../../Assets/background.jpg');
+    height: 82vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../Assets/background.jpg');
     background-position: center center;
     width: 100%;
     background-size: cover;
@@ -7,35 +8,30 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 990px) {
-        height: 70vh;
-
-    }
-
-    @media screen and (max-width: 600px) {
-        height: 430px
-    }
+    // @media screen and (max-width: 600px) {
+    //     height: 430px
+    // }
 
     @media screen and (max-width: 600px) {
-        background: url('../../Assets/mobile.jpg');
+        // height: 82vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../Assets/mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .left-container {
-        height: 100vh;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
 
-        @media screen and (max-width: 990px) {
-            justify-content: flex-start;
-            margin-top: 5rem;
-            width: 60%;
-            padding-left: 3rem;
-        }
+        // @media screen and (max-width: 990px) {
+        //     // justify-content: flex-start;
+        //     // margin-top: 5rem;
+        //     // width: 60%;
+        //     // padding-left: 3rem;
+        // }
 
         @media screen and (max-width: 600px) {
             padding-left: 0rem;
@@ -53,6 +49,9 @@
             @media screen and (max-width: 1300px) {
                 font-size: 50px;
             }
+            @media screen and (max-width: 990px) {
+                font-size: 35px;
+            }
 
             @media screen and (max-width: 600px) {
                 font-size: 25px !important;
@@ -65,6 +64,9 @@
             font-weight: 700 !important;
             color: #fff;
 
+            @media screen and (max-width: 990px) {
+                font-size: 25px !important;
+            }
             @media screen and (max-width: 600px) {
                 font-size: 20px !important;
             }
@@ -97,27 +99,18 @@
     }
 
     .right-container {
-        height: 100vh;
         width: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
 
         @media screen and (max-width: 990px) {
-            align-items: flex-start;
-            margin-top: 20rem;
-            width: 50%;
-
+            justify-content: flex-end;
 
         }
 
-        @media screen and (max-width: 600px) {
-            width: 30%;
-            margin-top: 17rem;
 
-        }
 
-        
         .button {
             color: #D44745;
             font-family: 'Orbitron', Verdana, sans-serif;
@@ -130,17 +123,17 @@
             cursor: pointer;
             position: relative;
             z-index: 5;
-        
+
             .icon {
                 padding: 10px;
                 color: #fff;
                 font-size: 90px;
-        
+
                 @media screen and (max-width: 600px) {
                     font-size: 60px;
                 }
             }
-        
+
             &::before {
                 content: "";
                 position: absolute;
@@ -154,14 +147,23 @@
                 background: #D44745;
                 border-radius: 50%;
                 animation: pulse-border 1500ms ease-out infinite;
-        
+
+                @media screen and (max-width: 600px) {
+                    width: 60px;
+                    height: 60px;
+                }
+
+
+
+
             }
+
             @keyframes pulse-border {
                 0% {
                     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
                     opacity: 1;
                 }
-            
+
                 100% {
                     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
                     opacity: 0;
@@ -172,10 +174,3 @@
 
     }
 }
-
-
-/***********************************************************/
-
-
-/***********************************************************/
-

@@ -1,12 +1,16 @@
 import React from 'react'
 import "./BioGraphy.scss"
 import bio from '../../Assets/paracites.jpg'
+import Zoom from 'react-reveal/Zoom';
+
 
 const BioGraphy = () => {
   return (
     <div className='Biography-container'>
       <div className="flex-content">
-        <img src={bio} alt="" />
+        <Zoom>
+          <img src={bio} alt="" />
+        </Zoom>
         <div className="content">
           <div className="flex-text">
             <div></div>
