@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 import logo from '../../Assets/logo.png'
 
@@ -7,6 +7,9 @@ import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 
 const Navbar = () => {
+
+    const [background, setBackground] = useState(false);
+
     const [state, setState] = React.useState({
 
         left: false,
@@ -62,8 +65,19 @@ const Navbar = () => {
         </Box>
     );
 
+
+   
+    const changeNavBar = () => {
+        if (window.scrollY >= 210) {
+            setBackground(true)
+        } else {
+            setBackground(false)      
+        }
+    }
+    window.addEventListener("scroll", changeNavBar);
+
     return (
-        <div className='nav-container'>
+        <div className={background ? 'nav-container color':'nav-container'}>
             <div className="logo">
                 <img src={logo} alt="" />
             </div>

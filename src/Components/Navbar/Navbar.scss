@@ -5,6 +5,9 @@
     justify-content: center;
     gap: 10rem;
     padding: 25px 0px;
+   
+    
+   
 
     @media screen and (max-width:1300px) {
         padding: 20px 0px;
@@ -80,6 +83,14 @@
 
 }
 
+.color{
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    z-index: 111;
+    box-shadow: 0 0 3px 0 #0000004d;
+
+}
 .main {
     display: flex;
     flex-direction: column;
