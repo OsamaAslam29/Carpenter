@@ -38,9 +38,9 @@ const BioGraphy = () => {
           However, it is necessary to take swift action against them so that the valuable furniture and the wood, which might have been kept for use in construction, remain safe from destruction. Suppose the situation is not controlled on time. The conditions of wood and the other decoration piece can deteriorate further. We provide different services to control pests in these areas:
         </p>
         <ul className="list">
-          <li><a href="#">Bee Removal Service in Marietta GA</a></li>
-          <li><a href="#">Wasp Removal Service in Cartersville GA</a></li>
-          <li><a href="#">Cockroach Removal in Acworth GA</a></li>
+          <li><a href="https://firmtechservices.com/199-Bee-Removal-Service-Marietta-GA">Bee Removal Service in Marietta GA</a></li>
+          <li><a href="https://firmtechservices.com/199-Wasp-Removal-Service-Cartersville-GA">Wasp Removal Service in Cartersville GA</a></li>
+          <li><a href="https://firmtechservices.com/199-Cockroach-Removal-Acworth-GA">Cockroach Removal in Acworth GA</a></li>
         </ul>
       </div>
       <div className="section">
@@ -101,7 +101,7 @@ const BioGraphy = () => {
         <p>
           Before deciding to call for a professional <strong>carpenter ant treatment in Woodstock GA</strong> , there are certain things that one can do by oneself. For instance, one can take out the damaged furniture from the house, and the damaged and old wood should also be removed from the surrounding residence.<br />
 
-          Additionally, cracks, which are appeared in the building's structure, should fill as soon as possible. After doing all those things, if the insects do not stop and continuously invade inside, it is time to call us at <a href="#">(315) 731-7928 </a> because we are a professional company that gives affordable <strong> carpenter ant treatment costs</strong> in Woodstock GA.
+          Additionally, cracks, which are appeared in the building's structure, should fill as soon as possible. After doing all those things, if the insects do not stop and continuously invade inside, it is time to call us at <a href="tel:(315) 731-7928">(315) 731-7928 </a> because we are a professional company that gives affordable <strong> carpenter ant treatment costs</strong> in Woodstock GA.
         </p>
       </div>
       <div className="section">

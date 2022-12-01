@@ -17,13 +17,15 @@ const Home = () => {
             <div className="content">Carpenter Ant Treatment in  Woodstock GA</div>
             <div className="para">First Strike Pest Elimination</div>
             <div className="btn">
-              <a href="#">Call Now</a>
+              <a href="tel:(470) 999-6819">Call Now</a>
             </div>
           </div>
         </Bounce>
         <div className="right-container">
           <React.Fragment>
-            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+            <ModalVideo
+             channel='youtube'
+              autoplay="1" isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
             <div className="startContainer">
               <button className="button pulseBox" onClick={() => setOpen(true)}><AiOutlineCaretRight className='icon' /> </button>
             </div>

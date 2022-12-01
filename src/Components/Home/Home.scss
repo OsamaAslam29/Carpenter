@@ -8,12 +8,7 @@
     display: flex;
     justify-content: center;
 
-    // @media screen and (max-width: 600px) {
-    //     height: 430px
-    // }
-
     @media screen and (max-width: 600px) {
-        // height: 82vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../Assets/mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -25,13 +20,6 @@
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-
-        // @media screen and (max-width: 990px) {
-        //     // justify-content: flex-start;
-        //     // margin-top: 5rem;
-        //     // width: 60%;
-        //     // padding-left: 3rem;
-        // }
 
         @media screen and (max-width: 600px) {
             padding-left: 0rem;

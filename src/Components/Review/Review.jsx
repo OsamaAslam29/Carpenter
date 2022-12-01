@@ -28,7 +28,7 @@ const Review = () => {
                 <img src={review} alt="" />
             </div>
             <div className="review-button">
-                <a href="#">Write a Review</a>
+                <a href="https://g.page/r/CXtIrP9rgGN0EAI/review">Write a Review</a>
             </div>
             <Fade bottom>
                 <div className="content" style={{ marginTop: "3rem" }}>
