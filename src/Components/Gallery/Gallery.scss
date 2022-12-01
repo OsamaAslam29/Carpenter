@@ -97,21 +97,6 @@
 
                 }
             }
-
-
-            .icon {
-                position: absolute;
-                bottom: 30px;
-                left: 20px;
-                color: #fff;
-                font-size: 35px;
-
-                @media screen and (max-width: 650px) {
-                    left: 35px;
-                    bottom: 20px;
-
-                }
-            }
         }
 
         .img::before {
@@ -121,7 +106,7 @@
             left: 0;
             right: 0;
             top: 0;
-            bottom: 0;
+            bottom: 0px;
             transition: all ease-in-out .3s;
             z-index: 2;
             opacity: 0;
@@ -129,13 +114,40 @@
 
         .img:hover::before {
             opacity: 1;
+            
         }
 
         .img:hover img {
             transform: scale(1.2);
             transition: .3s;
-
+            
         }
+
+
+        .position{
+            position: relative;
+            a{
+                color: #fff;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                z-index: 2222;
+                display: none;
+                .icon{
+                    font-size: 30px;
+                }
+            }
+            &:hover{
+                a{
+                    display: block;
+                }
+                .img::before {
+                    opacity: 1;
+                    
+                }
+            }
+        }
+
     }
 
 

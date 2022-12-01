@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
 import logo from '../../Assets/logo.png'
+import logos from '../../Assets/logos.png'
 
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';

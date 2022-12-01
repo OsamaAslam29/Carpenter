@@ -24,24 +24,36 @@ const Gallery = () => {
       </Fade>
       <div className="flex-images">
         <Bounce left>
-          <div className="img">
-            <img src={first} alt="" />
-            <div className="icons">
-              <a href="https://firmtechservices.com/landingpage/gallery_images/1665093512_bed-bug-control-service-in-Kennesaw-GA.webp"></a>
-                <AiOutlinePlus className='icon' />
+          <div className='position'>
+            <div className="img">
+              <img src={first} alt="" />
             </div>
+              <a href="https://firmtechservices.com/landingpage/gallery_images/1665093512_bed-bug-control-service-in-Kennesaw-GA.webp">
+
+              <AiOutlinePlus className='icon' />
+              </a>
           </div>
         </Bounce>
         <Bounce bottom>
-          <div className="img">
-            <img src={second} alt="" />
-            <AiOutlinePlus className='icon' />
+          <div className='position'>
+            <div className="img">
+              <img src={second} alt="" />
+            </div>
+              <a href="https://firmtechservices.com/landingpage/gallery_images/1665093512_carpenter-ant-treatment-in-Woodstock-GA.webp">
+
+              <AiOutlinePlus className='icon' />
+              </a>
           </div>
         </Bounce>
         <Bounce right>
-          <div className="img">
-            <img src={third} alt="" />
-            <AiOutlinePlus className='icon' />
+          <div className='position'>
+            <div className="img">
+              <img src={third} alt="" />
+            </div>
+              <a href="https://firmtechservices.com/landingpage/gallery_images/1665093512_wasp-removal-service-in-Cartersville-GA.webp">
+
+              <AiOutlinePlus className='icon' />
+              </a>
           </div>
         </Bounce>
       </div>
