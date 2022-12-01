@@ -125,6 +125,9 @@
 
             }
 
+            p{
+                text-align: justify;
+            }
             .border {
                 border-bottom: 1px solid rgb(227, 229, 230);
                 height: 1px;
@@ -148,7 +151,7 @@
                     }
 
                     p {
-                        font-size: 11px;
+                        // font-size: 11px;
                         margin-top: 3px;
                     }
                 }

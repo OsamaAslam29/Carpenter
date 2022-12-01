@@ -33,7 +33,7 @@ const Contact = () => {
                             </div>
                             <div className="flex-call">
                                 <h5>Call Us</h5>
-                                <p>(470) 999-6819</p>
+                                <a href='tel:(470) 999-6819'>(470) 999-6819</a>
                             </div>
                         </div>
                         <div className="call">
@@ -42,7 +42,7 @@ const Contact = () => {
                             </div>
                             <div className="flex-call">
                                 <h5>Mail Us</h5>
-                                <p>ManuelCotrich@firststrikepestelimination.com</p>
+                                <a href='mailto:ManuelCotrich@firststrikepestelimination.com'>ManuelCotrich@firststrikepestelimination.com</a>
                             </div>
                         </div>
                         <div className="call">
@@ -51,7 +51,7 @@ const Contact = () => {
                             </div>
                             <div className="flex-call">
                                 <h5>Office Address</h5>
-                                <p>Woodstock GA</p>
+                                <a href='https://goo.gl/maps/v3XK3rW4sVQXP56Q6'>Woodstock GA</a>
                             </div>
                         </div>
                         <div className="video-section">

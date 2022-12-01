@@ -75,7 +75,7 @@
         .card {
             overflow: hidden;
             position: relative;
-            height: 420px;
+            // height: 420px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -92,21 +92,19 @@
                 right: 0;
                 top: 0;
                 transition: all 1s;
-                margin-top: 420px;
+                margin-top: 360px;
                 z-index: -1;
             }
+            
             &:hover {
                 .back_drop {
                     margin-top: 0;
                 }
             }
-
-            .logo {
-                width: 75px;
-                height: 75px;
-
+            .icon {
+                transition: all 1s;
+                fill: var(--primary-color);
             }
-
             .heading {
                 font-size: 25px !important;
                 font-weight: 700 !important;
@@ -121,12 +119,15 @@
 
             .para {
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 17px;
                 text-align: justify;
             }
         }
         .card:hover {
             color: white;
+            .icon{
+                fill: white;
+            }
         }
 
 

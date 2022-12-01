@@ -6,7 +6,8 @@
     margin: 0 auto;
     padding: 40px 0px;
     padding-bottom: 60px;
-    @media screen and (max-width:650px) {     
+
+    @media screen and (max-width:650px) {
         padding: 0 0 30px 0;
     }
 
@@ -59,6 +60,7 @@
             align-items: center;
             padding: 0 20px;
         }
+
         @media screen and (max-width: 650px) {
             margin-top: 1rem;
 
@@ -125,10 +127,15 @@
 
                     }
 
-                    p {
+                    a {
                         line-break: anywhere;
                         font-size: 15px;
                         color: black;
+
+                        &:hover {
+                            color: #007bff;
+
+                        }
                     }
                 }
             }
@@ -177,14 +184,19 @@
             }
 
             .textarea {
-                width: -webkit-fill-available;
-                height: 130px;
                 border: 1px solid rgb(214 215 216 / 60%);
                 padding: 10px;
 
                 textarea {
+                    color: rgba(0, 0, 0, 0.6);
+                    font-size: 16px;
+                    height: 130px;
+                    width: -webkit-fill-available;
 
-                    resize: none;
+                    // resize: none;
+                    @media screen and (max-width: 650px) {
+                        height: 100px;
+                    }
                 }
             }
 
@@ -192,7 +204,6 @@
                 @media screen and (max-width: 1200px) {
                     display: flex;
                     justify-content: center;
-
 
                 }
 

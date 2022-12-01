@@ -1,6 +1,7 @@
 import React from 'react'
 import './Services.scss'
-import box from '../../Assets/box.svg'
+import { ReactComponent as Logo } from '../../Assets/box.svg';
+
 import Roll from 'react-reveal/Roll';
 import Fade from 'react-reveal/Fade';
 
@@ -24,7 +25,7 @@ const Services = () => {
           <div className="card">
             <div className="back_drop"></div>
             <div className="logo">
-              <img src={box} alt="error" />
+              <Logo className='icon' />
             </div>
             <div className="heading">Bee Removal Service</div>
             <div className="para">We are an experienced bee removal company from residential locations.</div>
@@ -34,7 +35,7 @@ const Services = () => {
           <div className="card">
             <div className="back_drop"></div>
             <div className="logo">
-              <img src={box} alt="" />
+              <Logo className='icon' />
             </div>
             <div className="heading">Bed Bug Control Service</div>
             <div className="para">Getting rid of bugs is easy now, as we are here to deal professionally.</div>
@@ -44,7 +45,7 @@ const Services = () => {
           <div className="card">
             <div className="back_drop"></div>
             <div className="logo">
-              <img src={box} alt="" />
+              <Logo className='icon' />
             </div>
             <div className="heading">Wasp Removal Service</div>
             <div className="para">Now the danger of wasps can be tamed with the help of our professional workers</div>
@@ -54,7 +55,7 @@ const Services = () => {
           <div className="card">
             <div className="back_drop"></div>
             <div className="logo">
-              <img src={box} alt="" />
+              <Logo className='icon' />
             </div>
             <div className="heading">Carpenter Ant Treatment</div>
             <div className="para">Save your valuable wood and furniture by getting our effective carpenter ant treatment.</div>

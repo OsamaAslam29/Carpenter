@@ -23,32 +23,32 @@ const Footer = () => {
                             <div className="heading">Carpenter Ant Treatment in <br /> Woodstock GA </div>
                             <div className="para">First Strike Pest Elimination</div>
                             <div className="info">
-                                <h3>Phone: <span> (470) 999-6819</span></h3>
+                                <h3>Phone: <a href='tel:(470) 999-6819'> (470) 999-6819</a></h3>
                                 <div className="flex">
                                     <h3>Email: </h3>
-                                    <span>ManuelCotrich@firststrikepestelimination.com</span>
+                                    <a href='mailto:ManuelCotrich@firststrikepestelimination.com'>ManuelCotrich@firststrikepestelimination.com</a>
 
                                 </div>
-                                <h3>Text: &nbsp;&nbsp;<span> (470) 999-6819</span></h3>
+                                <h3>Text: &nbsp;&nbsp;<a href='sms:(470) 999-6819'> (470) 999-6819</a></h3>
                             </div>
                             <div className="icons">
-                                <a href="">
+                                <a href="https://youtu.be/lP2FJCJlsQY">
                                     <AiFillYoutube className='icon' />
                                 </a>
-                                <a href="">
+                                <a href="https://firststrikepestelimination.com/">
 
                                     <BsGlobe className='icon' />
                                 </a>
-                                <a href="">
+                                <a href="https://www.instagram.com/firststrikepestelimination/">
                                     <AiFillInstagram className='icon' />
                                 </a>
-                                <a href="">
+                                <a href="https://www.yelp.com/biz/first-strike-pest-elimination-woodstock">
                                     <FaYelp className='icon' />
                                 </a>
-                                <a href="">
+                                <a href="https://goo.gl/maps/v3XK3rW4sVQXP56Q6">
                                     <BsGoogle className='icon' />
                                 </a>
-                                <a href="">
+                                <a href="https://www.facebook.com/people/First-Strike-Pest-Elimination/100087630729720/">
                                     <FaFacebookF className='icon' />
                                 </a>
                             </div>
@@ -61,27 +61,27 @@ const Footer = () => {
                             <div className="icons" style={{ marginTop: "10px" }}>
                                 <div className="icon">
                                     <FaAngleRight style={{ color: "var(--primary-color)" }} />
-                                    <p>
+                                    <a href='https://firmtechservices.com/199-Wasp-Removal-Service-Cartersville-GA'>
                                         Wasp Removal Service in Cartersville GA
-                                    </p>
+                                    </a>
                                 </div>
                                 <div className="icon">
                                     <FaAngleRight style={{ color: "var(--primary-color)" }} />
-                                    <p>
+                                    <a href='https://firmtechservices.com/199-Bee-Removal-Service-Marietta-GA'>
                                         Bee Removal Service in Marietta GA
-                                    </p>
+                                    </a>
                                 </div>
                                 <div className="icon">
                                     <FaAngleRight style={{ color: "var(--primary-color)" }} />
-                                    <p>
+                                    <a href='https://firmtechservices.com/199-Bed-Bug-Control-Service-Kennesaw-GA'>
                                         Bed Bug Control Service in Kennesaw GA
-                                    </p>
+                                    </a>
                                 </div>
                                 <div className="icon">
                                     <FaAngleRight style={{ color: "var(--primary-color)" }} />
-                                    <p>
+                                    <a href='https://firmtechservices.com/199-Cockroach-Removal-Acworth-GA'>
                                         Cockroach Removal in Acworth GA
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
 
@@ -96,7 +96,7 @@ const Footer = () => {
             </div>
             <div className="footer-bar">
                 <p>
-                    © Copyright 2022 | Powered by FTS. All Right Reserved.
+                    © Copyright 2022 | Powered by <a href="https://firmtechservices.com/">FTS</a>. All Right Reserved.
                 </p>
             </div>
         </>

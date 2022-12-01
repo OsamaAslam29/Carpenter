@@ -26,7 +26,10 @@ const Gallery = () => {
         <Bounce left>
           <div className="img">
             <img src={first} alt="" />
-            <AiOutlinePlus className='icon' />
+            <div className="icons">
+              <a href="https://firmtechservices.com/landingpage/gallery_images/1665093512_bed-bug-control-service-in-Kennesaw-GA.webp"></a>
+                <AiOutlinePlus className='icon' />
+            </div>
           </div>
         </Bounce>
         <Bounce bottom>

@@ -86,13 +86,18 @@
                 padding: 15px 35px;
                 color: #fff;
                 border: 2px solid var(--primary-color);
-                background-color: var(--primary-color) !important;
+                background-color: var(--primary-color);
                 border-radius: 3px;
 
                 @media screen and (max-width: 600px) {
                     padding: 12px 25px;
                     font-size: 14px;
 
+                }
+
+                &:hover{
+                    background-color: transparent;
+                    border: 2px solid var(--primary-color);
                 }
             }
         }
