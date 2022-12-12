@@ -5,8 +5,6 @@ import { useState } from 'react'
 import { AiOutlineCaretRight } from 'react-icons/ai';
 import Bounce from 'react-reveal/Bounce';
 
-
-
 const Home = ({page}) => {
   const [isOpen, setOpen] = useState(false)
   return (
@@ -14,7 +12,7 @@ const Home = ({page}) => {
       <div className='home-container' id='home'>
         <Bounce left>
           <div className="left-container">
-            <div className="content">Carpenter Ant Treatment in  Woodstock GA</div>
+            <div className="content">{page?.landPage?.client?.name}</div>
             <div className="para">First Strike Pest Elimination</div>
             <div className="btn">
               <a href="tel:(470) 999-6819">Call Now</a>

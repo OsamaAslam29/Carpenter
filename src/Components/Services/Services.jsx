@@ -27,7 +27,8 @@ const Services = ({page}) => {
             <div className="logo">
               <Logo className='icon' />
             </div>
-            <div className="heading">Bee Removal Service</div>
+            {/* <div className="heading">Bee Removal Service</div> */}
+            <div className="heading">{page?.landpage?.services?.service_img_title}</div>
             <div className="para">We are an experienced bee removal company from residential locations.</div>
           </div>
         </Roll>
