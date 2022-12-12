@@ -9,7 +9,7 @@ import Bounce from 'react-reveal/Bounce';
 
 
 
-const Review = () => {
+const Review = ({page}) => {
     return (
         <div className='review-container' id='review'>
             <Fade bottom>

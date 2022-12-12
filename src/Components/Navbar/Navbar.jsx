@@ -9,7 +9,7 @@ import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Fade from 'react-reveal/Fade';
 
 
-const Navbar = () => {
+const Navbar = ({page}) => {
 
     const [background, setBackground] = useState(false);
 

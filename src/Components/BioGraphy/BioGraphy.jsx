@@ -4,7 +4,7 @@ import bio from '../../Assets/paracites.jpg'
 import Zoom from 'react-reveal/Zoom';
 
 
-const BioGraphy = () => {
+const BioGraphy = ({page}) => {
   return (
     <div className='Biography-container'>
       <div className="flex-content">

@@ -11,7 +11,7 @@ import { BsGoogle } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 
-const Header = (props) => {
+const Header = ({page}) => {
     return (
         <Fade top>
             <div className='header-container'>

@@ -13,7 +13,7 @@ import { FaAngleRight } from 'react-icons/fa';
 import Bounce from 'react-reveal/Bounce';
 
 
-const Footer = () => {
+const Footer = ({page}) => {
     return (
         <>
             <div className='footer-container'>

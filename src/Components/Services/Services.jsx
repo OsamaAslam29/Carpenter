@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from '../../Assets/box.svg';
 import Roll from 'react-reveal/Roll';
 import Fade from 'react-reveal/Fade';
 
-const Services = () => {
+const Services = ({page}) => {
   return (
     <div className='services-container' id='services'>
       <Fade bottom>

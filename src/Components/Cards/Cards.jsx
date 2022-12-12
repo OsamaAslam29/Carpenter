@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '../../Assets/search.svg';
 import Roll from 'react-reveal/Roll';
 
 
-const Cards = () => {
+const Cards = ({page}) => {
     return (
         <div className='card-container' id='about'>
             <div className="heading-container">WHY CHOOSE <span>US</span></div>

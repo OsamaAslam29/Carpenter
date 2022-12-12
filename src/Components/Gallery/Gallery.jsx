@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 
 
-const Gallery = () => {
+const Gallery = ({page}) => {
   return (
     <div className='gallery-container' id='gallery'>
       <Fade bottom>

@@ -34,16 +34,16 @@ function App() {
   return (
     <>
 
-      <Header address= {data}/>
-      <Navbar />
-      <Home />
-      <Cards />
-      <BioGraphy />
-      <Services />
-      <Gallery />
-      <Review />
-      <Contact />
-      <Footer />
+      <Header page={data} />
+      <Navbar page={data} />
+      <Home page={data} />
+      <Cards page={data} />
+      <BioGraphy page={data} />
+      <Services page={data} />
+      <Gallery page={data} />
+      <Review page={data} />
+      <Contact page={data} />
+      <Footer page={data} />
 
     </>
   );

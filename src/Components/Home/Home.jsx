@@ -7,7 +7,7 @@ import Bounce from 'react-reveal/Bounce';
 
 
 
-const Home = () => {
+const Home = ({page}) => {
   const [isOpen, setOpen] = useState(false)
   return (
     <>

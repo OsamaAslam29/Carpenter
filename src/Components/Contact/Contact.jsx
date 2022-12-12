@@ -7,7 +7,7 @@ import Recaptcha from "react-google-recaptcha"
 import Fade from 'react-reveal/Fade';
 
 
-const Contact = () => {
+const Contact = ({page}) => {
     function onChange(value) {
         console.log("Captcha value:", value);
     }
