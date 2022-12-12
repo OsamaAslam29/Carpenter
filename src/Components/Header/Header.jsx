@@ -18,18 +18,18 @@ const Header = ({page}) => {
                 <div className="left-section">
                     <a href='https://www.google.com/maps/place/United+States/@37.2755783,-104.6571311,5z/data=!3m1!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891!16zL20vMDljN3cw' className="locatin">
                         <MdLocationPin className='icon' style={{ fontSize: "30px" }} />
-                        <div>Woodstock GA</div>
+                        <div>{page?.landPage?.address=== null}</div>
                         
                     </a>
                     <a href='mailto:ManuelCotrich@firststrikepestelimination.com' className="email">
                         <IoIosMail className='icon' style={{ fontSize: "30px" }} />
-                        <div>ManuelCotrich@firststrikepestelimination.com</div>
+                        <div>{page?.landPage?.client?.email}</div>
                     </a>
                 </div>
                 <div className="right-section">
                     <a href='tel:(470) 999-6819' className="phone">
                         <FaPhoneAlt className='icon' />
-                        <div>(470) 999-6819</div>
+                        <div>{page?.landPage?.client?.phone_no}</div>
                     </a>
                     <div className="social">
                         <a href="https://youtu.be/lP2FJCJlsQY">

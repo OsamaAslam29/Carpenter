@@ -38,7 +38,7 @@ const Navbar = ({page}) => {
         >
             <div className='main'>
                 <div className="logo">
-                    <img src={logo} alt="" />
+                    <img src={page?.landPage?.client?.logo} alt="" />
                 </div>
                 <div className="nav">
                     <div className="mobile_icon" to="/Home">
@@ -60,7 +60,7 @@ const Navbar = ({page}) => {
                         <a href="#contact">Contact Us</a>
                     </div>
                     <div className='right'>
-                        <a href="tel:(470) 999-6819">Contact Us</a>
+                        <a href="tel:{page.landPage.client.phone_no}">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -84,6 +84,7 @@ const Navbar = ({page}) => {
             <div className={background ? 'nav-container color' : 'nav-container'}>
                 <div className="logo">
                     <img src={logo} alt="" />
+                    {/* <img src={page?.landPage?.client?.logo}alt="" /> */}
                 </div>
                 <div className="menu">
                     <div className="web-menu">
@@ -96,7 +97,8 @@ const Navbar = ({page}) => {
                             <a href="#contact">Contact Us</a>
                         </div>
                         <div className='right'>
-                            <a href="tel:(470) 999-6819">Contact Us</a>
+                            <a href="tel:{page.landPage.client.phone_no}">Contact Us</a>
+                            {/* <a href="tel:{page.landPage.client.phone_no}">Contact Us</a> */}
                         </div>
                     </div>
                     <div className="mobile_menu">
