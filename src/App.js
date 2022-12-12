@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import './App.scss';
 import BioGraphy from './Components/BioGraphy/BioGraphy';
 import Cards from './Components/Cards/Cards';
@@ -11,11 +12,29 @@ import Review from './Components/Review/Review';
 import Services from './Components/Services/Services';
 
 function App() {
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    const url = "https://weblymart.com/landingpage/api/101-Swiming-Pool-Service"
+
+    const fetchDate = async () => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        console.log(json);
+        setData(json.landPage)
+      }
+      catch (error) {
+        console.log("Error", error)
+      }
+    }
+    fetchDate();
+  }, [])
 
   return (
     <>
 
-      <Header />
+      <Header address= {data}/>
       <Navbar />
       <Home />
       <Cards />
