@@ -6,6 +6,7 @@ import Zoom from 'react-reveal/Zoom';
 
 const BioGraphy = ({page}) => {
   return (
+    <>
     <div className='Biography-container'>
       <div className="flex-content">
         <Zoom>
@@ -108,7 +109,7 @@ const BioGraphy = ({page}) => {
         <h2 className="heading">
           Where Do the Ants Live Mostly?
         </h2>
-        <p>
+        <p id='services'>
           Most of the time, they live in woods, dead trees, and humid environments. However, they enter the room for searching food. Food particles attract them actively. Further, ants are found in domestic places around sinks, bathtubs, poorly sealed windows, and door frames. Therefore, keep an eye on all those areas often and on so that the place remains safe.
         </p>
       </div>
@@ -116,6 +117,7 @@ const BioGraphy = ({page}) => {
 
 
     </div>
+    </>
   )
 }
 

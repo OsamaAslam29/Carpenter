@@ -9,7 +9,7 @@ const Home = ({page}) => {
   const [isOpen, setOpen] = useState(false)
   return (
     <>
-      <div className='home-container' id='home'>
+      <div className='home-container'>
         <Bounce left>
           <div className="left-container">
             <div className="content">{page?.landPage?.client?.name}</div>

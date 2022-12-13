@@ -12,7 +12,7 @@ const Contact = ({page}) => {
         console.log("Captcha value:", value);
     }
     return (
-        <div className='contact-container' id='contact'>
+        <div className='contact-container'>
             <Fade bottom>
                 <div className="content">
                     <div className="flex-text">

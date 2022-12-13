@@ -27,8 +27,8 @@ const Services = ({page}) => {
             <div className="logo">
               <Logo className='icon' />
             </div>
-            {/* <div className="heading">Bee Removal Service</div> */}
-            <div className="heading">{page?.landpage?.services?.service_img_title}</div>
+            <div className="heading">Bee Removal Service</div>
+            {/* <div className="heading">{page?.landpage?.services?.service_img_title}</div> */}
             <div className="para">We are an experienced bee removal company from residential locations.</div>
           </div>
         </Roll>
@@ -59,7 +59,7 @@ const Services = ({page}) => {
               <Logo className='icon' />
             </div>
             <div className="heading">Carpenter Ant Treatment</div>
-            <div className="para">Save your valuable wood and furniture by getting our effective carpenter ant treatment.</div>
+            <div className="para" id='gallery'>Save your valuable wood and furniture by getting our effective carpenter ant treatment.</div>
           </div>
         </Roll>
       </div>

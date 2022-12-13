@@ -74,9 +74,9 @@ const NewTestimonials = () => {
   return (
     <>
       <div className="tContianer">
-        <div className="slider__container">
+        <div className="slider__container" >
 
-          <Slider {...settings}>
+          <Slider {...settings} >
             {arr.map((data, i) => {
               return (
                 <div className="tcards" key={i}>
@@ -100,8 +100,8 @@ const NewTestimonials = () => {
           </Slider>
         </div>
 
+      <div id='contact'></div>
       </div>
-
     </>
 
   );

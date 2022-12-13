@@ -14,7 +14,7 @@ import Fade from 'react-reveal/Fade';
 const Header = ({ page }) => {
     return (
         <Fade top>
-            <div className='header-container'>
+            <div className='header-container'  id='home'>
                 <div className="left-section">
                     <a href='https://www.google.com/maps/place/United+States/@37.2755783,-104.6571311,5z/data=!3m1!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891!16zL20vMDljN3cw' className="locatin">
                         <MdLocationPin className='icon' style={{ fontSize: "30px" }} />
