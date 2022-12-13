@@ -21,7 +21,7 @@ const Header = ({ page }) => {
                         <div>{page?.landPage?.address}</div>
 
                     </a>
-                    <a href='mailto:ManuelCotrich@firststrikepestelimination.com' className="email">
+                    <a href={'mailto:' + page?.landPage?.client?.email} className="email">
                         <IoIosMail className='icon' style={{ fontSize: "30px" }} />
                         <div>{page?.landPage?.client?.email}</div>
                     </a>
@@ -32,22 +32,22 @@ const Header = ({ page }) => {
                         <div>{page?.landPage?.client?.phone_no}</div>
                     </a>
                     <div className="social">
-                        <a href="https://youtu.be/lP2FJCJlsQY">
+                        <a href={page?.landPage?.client?.youtube_link}>
                             <AiFillYoutube className='icon' style={{ fontSize: "30px" }} />
                         </a>
-                        <a href="https://firststrikepestelimination.com/">
+                        <a href={page?.landPage?.client?.instagram_link}>
                             <BsGlobe className='icon' />
                         </a>
-                        <a href="https://www.instagram.com/firststrikepestelimination/">
+                        <a href={page?.landPage?.client?.instagram_link}>
                             <AiFillInstagram className='icon' style={{ fontSize: "30px" }} />
                         </a>
-                        <a href="https://www.yelp.com/biz/first-strike-pest-elimination-woodstock">
+                        <a href={page?.landPage?.client?.yelp_link}>
                             <FaYelp className='icon' />
                         </a>
-                        <a href="https://goo.gl/maps/v3XK3rW4sVQXP56Q6">
+                        <a href={page?.landPage?.client?.instagram_link}>
                             <BsGoogle className='icon' />
                         </a>
-                        <a href="https://www.facebook.com/people/First-Strike-Pest-Elimination/100087630729720/">
+                        <a href={page?.landPage?.client?.facebook_link}>
                             <FaFacebookF className='icon' />
                         </a>
                     </div>

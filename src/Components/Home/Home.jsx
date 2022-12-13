@@ -23,7 +23,7 @@ const Home = ({page}) => {
           <React.Fragment>
             <ModalVideo
              channel='youtube'
-              autoplay="1" isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+              autoplay="1" isOpen={isOpen} videoId={page?.landPage?.client?.video_link} onClose={() => setOpen(false)} />
             <div className="startContainer">
               <button className="button pulseBox" onClick={() => setOpen(true)}><AiOutlineCaretRight className='icon' /> </button>
             </div>
