@@ -34,7 +34,7 @@ function App() {
   return (
     <>
 
-      {/* <Header page={data} />
+      <Header page={data} />
       <Navbar page={data} />
       <Home page={data} />
       <Cards page={data} />
@@ -43,7 +43,7 @@ function App() {
       <Gallery page={data} />
       <Review page={data} />
       <Contact page={data} />
-      <Footer page={data} /> */}
+      <Footer page={data} /> 
 
     </>
   );

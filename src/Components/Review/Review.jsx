@@ -6,10 +6,11 @@ import { ImQuotesRight } from 'react-icons/im';
 import customer from "../../Assets/customer.svg"
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import NewTestimonials from '../NewTestimonials/NewTestimonials';
 
 
 
-const Review = ({page}) => {
+const Review = ({ page }) => {
     return (
         <div className='review-container' id='review'>
             <Fade bottom>
@@ -41,55 +42,8 @@ const Review = ({page}) => {
                     </div>
                 </div>
             </Fade>
-            <div className="flex-testimonial">
-                <Bounce left>
-                    <div className="testimonail-card">
-                        <ImQuotesLeft className='icon' />
-                        <p>Great company as we used them for both our business & home.</p>
-                        <div className='border'></div>
-                        <div className="profile">
-                            <img src={customer} alt="" />
-                            <div className="data">
-                                <h5>Shawn Potters</h5>
-                                <p>Customer</p>
-                            </div>
-                        </div>
-                        <ImQuotesRight className='icon' />
-                    </div>
-                </Bounce>
-                <Bounce bottom>
-                    <div className="testimonail-card">
-                        <ImQuotesLeft className='icon' />
-                        <p>I highly recommend their service to anyone who needs carpenter ant treatment.</p>
-                        <div className='border'></div>
-                        <div className="profile">
-                            <img src={customer} alt="" />
-                            <div className="data">
-                                <h5>Ray Coleman</h5>
-                                <p>Customer</p>
-                            </div>
-                        </div>
-                        <ImQuotesRight className='icon' />
 
-                    </div>
-                </Bounce>
-                <Bounce right>
-                    <div className="testimonail-card">
-                        <ImQuotesLeft className='icon' />
-                        <p>My experience with this company has been nothing but exceptional.</p>
-                        <div className='border'></div>
-                        <div className="profile">
-                            <img src={customer} alt="" />
-                            <div className="data">
-                                <h5>Bella</h5>
-                                <p>Customer</p>
-                            </div>
-                        </div>
-                        <ImQuotesRight className='icon' />
-
-                    </div>
-                </Bounce>
-            </div>
+                <NewTestimonials />
 
         </div>
     )
