@@ -5,15 +5,14 @@ import { ReactComponent as Logo } from '../../Assets/box.svg';
 import Roll from 'react-reveal/Roll';
 import Fade from 'react-reveal/Fade';
 
-const Services = ({page}) => {
+const Services = ({ page }) => {
   return (
     <div className='services-container' id='services'>
       <Fade bottom>
         <div className="content">
           <div className="flex-text">
             <div></div>
-            <h3>
-              Who We Are?</h3>
+            <h3>Who We Are?</h3>
           </div>
           <div className="data">
             <h4>Services We <span>Offer</span></h4>
@@ -27,8 +26,10 @@ const Services = ({page}) => {
             <div className="logo">
               <Logo className='icon' />
             </div>
-            <div className="heading">Bee Removal Service</div>
-            {/* <div className="heading">{page?.landpage?.services?.service_img_title}</div> */}
+            <div className="heading">{page?.landpage?.services}
+
+              { }
+            </div>
             <div className="para">We are an experienced bee removal company from residential locations.</div>
           </div>
         </Roll>

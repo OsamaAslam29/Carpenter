@@ -15,7 +15,7 @@ const Home = ({page}) => {
             <div className="content">{page?.landPage?.client?.name}</div>
             <div className="para">First Strike Pest Elimination</div>
             <div className="btn">
-              <a href="tel:(470) 999-6819">Call Now</a>
+              <a href={'tel:' + page?.landPage?.client?.phone_no}>Call Now</a>
             </div>
           </div>
         </Bounce>
