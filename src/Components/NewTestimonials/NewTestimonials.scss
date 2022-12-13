@@ -5,6 +5,8 @@
   gap: 1rem;
 
 .slick-track{
+  display: flex;
+  gap: 1rem !important;
   width: 1140px !important;
 }
   .slick-dots {

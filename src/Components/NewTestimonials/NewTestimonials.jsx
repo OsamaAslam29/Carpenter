@@ -43,7 +43,7 @@ const NewTestimonials = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: "0",
