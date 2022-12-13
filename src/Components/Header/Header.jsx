@@ -27,7 +27,7 @@ const Header = ({ page }) => {
                     </a>
                 </div>
                 <div className="right-section">
-                    <a href='tel:${page?.landPage?.client?.phone_no}' className="phone">
+                    <a href={'tel:' + page?.landPage?.client?.phone_no} className="phone">
                         <FaPhoneAlt className='icon' />
                         <div>{page?.landPage?.client?.phone_no}</div>
                     </a>

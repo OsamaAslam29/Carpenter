@@ -60,7 +60,7 @@ const Navbar = ({page}) => {
                         <a href="#contact">Contact Us</a>
                     </div>
                     <div className='right'>
-                        <a href="tel:{page.landPage.client.phone_no}">Contact Us</a>
+                        <a href={'tel:' + page?.landPage?.client?.phone_no}>Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,7 @@ const Navbar = ({page}) => {
                             <a href="#contact">Contact Us</a>
                         </div>
                         <div className='right'>
-                            <a href="tel:{page.landPage.client.phone_no}">Contact Us</a>
-                            {/* <a href="tel:{page.landPage.client.phone_no}">Contact Us</a> */}
+                            <a href={'tel:' + page?.landPage?.client?.phone_no}>Contact Us</a>
                         </div>
                     </div>
                     <div className="mobile_menu">
