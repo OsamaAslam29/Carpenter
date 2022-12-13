@@ -41,7 +41,7 @@ function App() {
       <BioGraphy page={data} />
       <Services page={data} />
       <Gallery page={data} />
-      <Review page={data} />
+      {/* <Review page={data} /> */}
       <Contact page={data} />
       <Footer page={data} /> 
 
