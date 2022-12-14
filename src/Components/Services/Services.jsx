@@ -20,49 +20,20 @@ const Services = ({ page }) => {
         </div>
       </Fade>
       <div className="flex-cards">
-        <Roll left>
-          <div className="card">
-            <div className="back_drop"></div>
-            <div className="logo">
-              <Logo className='icon' />
-            </div>
-            <div className="heading">{page?.landpage?.services}
-
-              { }
-            </div>
-            <div className="para">We are an experienced bee removal company from residential locations.</div>
-          </div>
-        </Roll>
-        <Roll left>
-          <div className="card">
-            <div className="back_drop"></div>
-            <div className="logo">
-              <Logo className='icon' />
-            </div>
-            <div className="heading">Bed Bug Control Service</div>
-            <div className="para">Getting rid of bugs is easy now, as we are here to deal professionally.</div>
-          </div>
-        </Roll>
-        <Roll left>
-          <div className="card">
-            <div className="back_drop"></div>
-            <div className="logo">
-              <Logo className='icon' />
-            </div>
-            <div className="heading">Wasp Removal Service</div>
-            <div className="para">Now the danger of wasps can be tamed with the help of our professional workers</div>
-          </div>
-        </Roll>
-        <Roll left>
-          <div className="card">
-            <div className="back_drop"></div>
-            <div className="logo">
-              <Logo className='icon' />
-            </div>
-            <div className="heading">Carpenter Ant Treatment</div>
-            <div className="para" id='gallery'>Save your valuable wood and furniture by getting our effective carpenter ant treatment.</div>
-          </div>
-        </Roll>
+        {
+          page?.landPage?.services.map((data,i) => {
+            return (
+              <div className="card">
+                <div className="back_drop"></div>
+                <div className="logo">
+                  <Logo className='icon' />
+                </div>
+                <div className="heading">{data.service_img_title}</div>
+                <div className="para">{data.service_img_description}</div>
+              </div>
+            )
+          })
+        }
       </div>
     </div>
   )

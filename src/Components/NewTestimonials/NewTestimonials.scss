@@ -93,13 +93,17 @@
           }
     
           .data {
-              margin-top: 10px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
     
               h5 {
                   font-size: 18px;
               }
     
               p {
+                  font-size: 11px;
                   margin-top: 3px;
               }
           }

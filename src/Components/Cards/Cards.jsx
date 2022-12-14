@@ -4,10 +4,15 @@ import { ReactComponent as Logo } from '../../Assets/search.svg';
 import Roll from 'react-reveal/Roll';
 
 
-const Cards = ({page}) => {
+const Cards = ({ page }) => {
+
+    console.log("page", page?.landPage?.testimonails);
     return (
-        <div className='card-container' id='about'>
-            <div className="heading-container">WHY CHOOSE <span>US</span></div>
+        <div className="card-container" id="about">
+            <div className="heading-container">
+                WHY CHOOSE <span>US</span>
+            </div>
+            {/* Data before Integration / Your previous Data
             <div className="flex-cards">
                 <Roll left>
                     <div className="card">
@@ -55,10 +60,27 @@ const Cards = ({page}) => {
                     </div>
                 </Roll>
 
-            </div>
+            </div> */}
 
+            <div className="flex-cards">
+                {page?.landPage?.testimonails.map((data, i) => {
+                    return (
+                        <Roll left>
+                            <div className="card" key={i}>
+                                <div className="back_drop"></div>
+
+                                <div className="logo">
+                                    <Logo className="icon" />
+                                </div>
+                                <div className="heading">{data?.username}</div>
+                                <div className="para">{data?.description}</div>
+                            </div>
+                        </Roll>
+                    );
+                })}
+            </div>
         </div>
-    )
+    );
 }
 
 export default Cards

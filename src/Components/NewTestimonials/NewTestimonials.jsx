@@ -13,28 +13,28 @@ import customer from "../../Assets/customer.svg"
 
 
 
-const arr = [
-  {
-    para: "I highly recommend their service to anyone who needs carpenter ant treatment.",
-    bio: "Shawn Potters",
-    data: "Customer",
-  },
-  {
-    para:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    bio: "CLIENT 1",
-    data: "Customer",
-  },
-  {
-    para:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    bio: "CLIENT 2",
-    data: "Customer",
-  },
+// const arr = [
+//   {
+//     para: "I highly recommend their service to anyone who needs carpenter ant treatment.",
+//     bio: "Shawn Potters",
+//     data: "Customer",
+//   },
+//   {
+//     para:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+//     bio: "CLIENT 1",
+//     data: "Customer",
+//   },
+//   {
+//     para:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+//     bio: "CLIENT 2",
+//     data: "Customer",
+//   },
 
-];
+// ];
 
-const NewTestimonials = () => {
+const NewTestimonials = ({ sub }) => {
 
   var settings = {
     dots: true,
@@ -77,18 +77,18 @@ const NewTestimonials = () => {
         <div className="slider__container" >
 
           <Slider {...settings} >
-            {arr.map((data, i) => {
+            {sub?.landPage?.testimonails.map((data, i) => {
               return (
                 <div className="tcards" key={i}>
                   <div className="testimonail-card">
                     <ImQuotesLeft className='icon' />
-                    <p>{data.para}</p>
+                    <p>{data?.description}</p>
                     <div className='border'></div>
                     <div className="profile">
                       <img src={customer} alt="" />
                       <div className="data">
-                        <h5>{data.bio}</h5>
-                        <p>{data.data}</p>
+                        <h5>{data?.username}</h5>
+                        <p>customer</p>
                       </div>
                     </div>
                     <ImQuotesRight className='icon' />

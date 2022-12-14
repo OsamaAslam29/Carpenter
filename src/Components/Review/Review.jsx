@@ -43,7 +43,7 @@ const Review = ({ page }) => {
                 </div>
             </Fade>
 
-                <NewTestimonials />
+                <NewTestimonials sub={page} />
 
         </div>
     )
