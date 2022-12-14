@@ -9,7 +9,7 @@ import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Fade from 'react-reveal/Fade';
 
 
-const Navbar = ({page}) => {
+const Navbar = ({ page }) => {
 
     const [background, setBackground] = useState(false);
 
@@ -83,8 +83,7 @@ const Navbar = ({page}) => {
         <Fade top>
             <div className={background ? 'nav-container color' : 'nav-container'}>
                 <div className="logo">
-                    <img src={logo} alt="" />
-                    {/* <img src={page?.landPage?.client?.logo}alt="" /> */}
+                    <img src={page?.landPage?.client?.logo} alt="" />
                 </div>
                 <div className="menu">
                     <div className="web-menu">
