@@ -13,7 +13,7 @@ import { FaAngleRight } from 'react-icons/fa';
 import Bounce from 'react-reveal/Bounce';
 
 
-const Footer = ({page}) => {
+const Footer = ({ page }) => {
     return (
         <>
             <div className='footer-container'>
@@ -23,32 +23,32 @@ const Footer = ({page}) => {
                             <div className="heading">Carpenter Ant Treatment in <br /> Woodstock GA </div>
                             <div className="para">First Strike Pest Elimination</div>
                             <div className="info">
-                                <h3>Phone: <a href='tel:(470) 999-6819'> (470) 999-6819</a></h3>
+                                <h3>Phone: <a href={'tel:' + page?.landPage?.client?.phone_no}> (470) 999-6819</a></h3>
                                 <div className="flex">
                                     <h3>Email: </h3>
-                                    <a href='mailto:ManuelCotrich@firststrikepestelimination.com'>ManuelCotrich@firststrikepestelimination.com</a>
+                                    <a href={'mailto:' + page?.landPage?.client?.email}>ManuelCotrich@firststrikepestelimination.com</a>
 
                                 </div>
-                                <h3>Text: &nbsp;&nbsp;<a href='sms:(470) 999-6819'> (470) 999-6819</a></h3>
+                                <h3>Text: &nbsp;&nbsp;<a href={'sms:' + page?.landPage?.client?.sms_no}> (470) 999-6819</a></h3>
                             </div>
                             <div className="icons">
-                                <a href="https://youtu.be/lP2FJCJlsQY">
+                                <a href={page?.landPage?.client?.youtube_link}>
                                     <AiFillYoutube className='icon' />
                                 </a>
-                                <a href="https://firststrikepestelimination.com/">
+                                <a href={page?.landPage?.client?.website_link}>
 
                                     <BsGlobe className='icon' />
                                 </a>
-                                <a href="https://www.instagram.com/firststrikepestelimination/">
+                                <a href={page?.landPage?.client?.instagram_link}>
                                     <AiFillInstagram className='icon' />
                                 </a>
-                                <a href="https://www.yelp.com/biz/first-strike-pest-elimination-woodstock">
+                                <a href={page?.landPage?.client?.yelp_link}>
                                     <FaYelp className='icon' />
                                 </a>
-                                <a href="https://goo.gl/maps/v3XK3rW4sVQXP56Q6">
+                                <a href={page?.landPage?.google_map}>
                                     <BsGoogle className='icon' />
                                 </a>
-                                <a href="https://www.facebook.com/people/First-Strike-Pest-Elimination/100087630729720/">
+                                <a href={page?.landPage?.client?.facebook_link}>
                                     <FaFacebookF className='icon' />
                                 </a>
                             </div>

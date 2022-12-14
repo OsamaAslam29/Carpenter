@@ -23,7 +23,7 @@ const Services = ({ page }) => {
         {
           page?.landPage?.services.map((data,i) => {
             return (
-              <div className="card">
+              <div className="card" key={i}>
                 <div className="back_drop"></div>
                 <div className="logo">
                   <Logo className='icon' />

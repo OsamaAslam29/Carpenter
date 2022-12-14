@@ -26,7 +26,7 @@ const Gallery = ({ page }) => {
         {
           page?.landPage?.images.map((data,i) => {
             return (
-              <div className='position'>
+              <div className='position' key={i}>
                 <div className="img">
                   <img src={data.gallery_img} alt="" />
                 </div>

@@ -3,9 +3,7 @@ import './Review.scss'
 import review from '../../Assets/review.png'
 import { ImQuotesLeft } from 'react-icons/im';
 import { ImQuotesRight } from 'react-icons/im';
-import customer from "../../Assets/customer.svg"
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 import NewTestimonials from '../NewTestimonials/NewTestimonials';
 
 
@@ -26,10 +24,10 @@ const Review = ({ page }) => {
                 </div>
             </Fade>
             <div className='review'>
-                <img src={review} alt="" />
+                <img src={page?.landPage?.google_review} alt="Image not present in DB" />
             </div>
             <div className="review-button">
-                <a href="https://g.page/r/CXtIrP9rgGN0EAI/review">Write a Review</a>
+                <a href={page?.landPage?.review_slug}>Write a Review</a>
             </div>
             <Fade bottom>
                 <div className="content" style={{ marginTop: "3rem" }}>

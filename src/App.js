@@ -15,7 +15,7 @@ function App() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    const url = "https://weblymart.com/landingpage/api/101-Swiming-Pool-Service"
+    const url = "https://firmtechservices.com/api/177-24-Hour-Towing-Service-Tulsa-OK"
 
     const fetchDate = async () => {
       try {

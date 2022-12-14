@@ -13,7 +13,7 @@ const Home = ({ page }) => {
         {
           page?.landPage?.slider_images.map((data, i) => {
             return (
-              <div className="left-container">
+              <div className="left-container" key={i}>
                 <div className="content">{data?.heading}</div>
                 <div className="para">{data.sub_text}</div>
                 <div className="btn">

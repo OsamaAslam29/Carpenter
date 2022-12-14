@@ -33,7 +33,9 @@ const Contact = ({page}) => {
                             </div>
                             <div className="flex-call">
                                 <h5>Call Us</h5>
-                                <a href='tel:(470) 999-6819'>(470) 999-6819</a>
+                                <a href={'tel:' + page?.landPage?.client?.phone_no}>
+                                    {page?.landPage?.client?.phone_no}
+                                </a>
                             </div>
                         </div>
                         <div className="call">
@@ -42,7 +44,7 @@ const Contact = ({page}) => {
                             </div>
                             <div className="flex-call">
                                 <h5>Mail Us</h5>
-                                <a href='mailto:ManuelCotrich@firststrikepestelimination.com'>ManuelCotrich@firststrikepestelimination.com</a>
+                                <a href={'mailto:' + page?.landPage?.client?.email}>{page?.landPage?.client?.email}</a>
                             </div>
                         </div>
                         <div className="call">
@@ -51,11 +53,11 @@ const Contact = ({page}) => {
                             </div>
                             <div className="flex-call">
                                 <h5>Office Address</h5>
-                                <a href='https://goo.gl/maps/v3XK3rW4sVQXP56Q6'>Woodstock GA</a>
+                                <a href={page?.landPage?.google_map}>{(page?.landPage?.address)}</a>
                             </div>
                         </div>
                         <div className="video-section">
-                            <iframe src="https://www.youtube.com/embed/FxoqucEUVFw">
+                            <iframe src={page?.landPage?.client?.video_link}>
                             </iframe>
                         </div>
                     </div>
