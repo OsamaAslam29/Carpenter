@@ -95,8 +95,10 @@ const Navbar = ({ page }) => {
                             <a href="#review">Reviews</a>
                             <a href="#contact">Contact Us</a>
                         </div>
-                        <div className='right'>
-                            <a href={'tel:' + page?.landPage?.client?.phone_no}>Contact Us</a>
+                        <div className='right' >
+                            <a style={{backgroundColor:page?.landPage?.client?.theme_color}} href={'tel:' + page?.landPage?.client?.phone_no}
+                            
+                            >Contact Us</a>
                         </div>
                     </div>
                     <div className="mobile_menu">

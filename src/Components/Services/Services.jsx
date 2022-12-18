@@ -1,8 +1,6 @@
 import React from 'react'
 import './Services.scss'
 import { ReactComponent as Logo } from '../../Assets/box.svg';
-
-import Roll from 'react-reveal/Roll';
 import Fade from 'react-reveal/Fade';
 
 const Services = ({ page }) => {
@@ -21,7 +19,7 @@ const Services = ({ page }) => {
       </Fade>
       <div className="flex-cards">
         {
-          page?.landPage?.services.map((data,i) => {
+          page?.landPage?.services.map((data, i) => {
             return (
               <div className="card" key={i}>
                 <div className="back_drop"></div>
