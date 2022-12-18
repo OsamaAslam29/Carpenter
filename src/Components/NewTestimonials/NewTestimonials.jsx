@@ -71,6 +71,9 @@ const NewTestimonials = ({ sub }) => {
     ],
   };
 
+
+  
+
   return (
     <>
       <div className="tContianer">
@@ -82,7 +85,7 @@ const NewTestimonials = ({ sub }) => {
                 <div className="tcards" key={i}>
                   <div className="testimonail-card">
                     <ImQuotesLeft className='icon' />
-                    <p>{data?.description}</p>
+                    <p>{data?.description.replace(/<(?:.|\n)*?>/gm, '')}</p>
                     <div className='border'></div>
                     <div className="profile">
                       <img src={customer} alt="" />

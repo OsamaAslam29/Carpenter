@@ -29,7 +29,7 @@ const Services = ({ page }) => {
                   <Logo className='icon' />
                 </div>
                 <div className="heading">{data.service_img_title}</div>
-                <div className="para">{data.service_img_description}</div>
+                <div className="para">{data.service_img_description.replace(/<[^>]+>/g, '')}</div>
               </div>
             )
           })
