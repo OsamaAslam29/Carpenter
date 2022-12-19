@@ -31,13 +31,13 @@
             div {
                 width: 40px;
                 height: 3px;
-                background-color: var(--primary-color);
+                // background-color: var(--primary-color);
             }
 
             h3 {
                 font-size: 20px;
                 font-weight: 700 !important;
-                color: var(--primary-color);
+                // color: var(--primary-color);
             }
 
         }
@@ -51,10 +51,6 @@
                 }
                 @media screen and (max-width: 650px) {
                     font-size: 25px !important;
-                }
-
-                span {
-                    color: var(--primary-color);
                 }
             }
         }
@@ -83,8 +79,8 @@
             font-weight: 700;
             padding: 15px 35px;
             color: #fff;
-            border: 2px solid var(--primary-color);
-            background-color: var(--primary-color) !important;
+            // border: 2px solid var(--primary-color);
+            // background-color: var(--primary-color) !important;
             border-radius: 3px;
 
         }

@@ -60,7 +60,7 @@ const Navbar = ({ page }) => {
                         <a href="#contact">Contact Us</a>
                     </div>
                     <div className='right'>
-                        <a href={'tel:' + page?.landPage?.client?.phone_no}>Contact Us</a>
+                    <a style={{backgroundColor:page?.landPage?.client?.theme_color, borderColor:page?.landPage?.client?.theme_color}} href={'tel:' + page?.landPage?.client?.phone_no}>Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,8 @@ const Navbar = ({ page }) => {
         <Fade top>
             <div className={background ? 'nav-container color' : 'nav-container'}>
                 <div className="logo">
-                    <img src={page?.landPage?.client?.logo} alt="" />
+                    {/* <img src={page?.landPage?.client?.logo} alt="" /> */}
+                    <img src={logo} alt="" />
                 </div>
                 <div className="menu">
                     <div className="web-menu">
@@ -96,9 +97,7 @@ const Navbar = ({ page }) => {
                             <a href="#contact">Contact Us</a>
                         </div>
                         <div className='right' >
-                            <a style={{backgroundColor:page?.landPage?.client?.theme_color}} href={'tel:' + page?.landPage?.client?.phone_no}
-                            
-                            >Contact Us</a>
+                            <a style={{backgroundColor:page?.landPage?.client?.theme_color, borderColor:page?.landPage?.client?.theme_color}} href={'tel:' + page?.landPage?.client?.phone_no}>Contact Us</a>
                         </div>
                     </div>
                     <div className="mobile_menu">

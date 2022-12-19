@@ -10,7 +10,8 @@ const Cards = ({ page }) => {
     return (
         <div className="card-container" id="about">
             <div className="heading-container">
-                WHY CHOOSE <span>US</span>
+                WHY CHOOSE <span
+                    style={{ color: page?.landPage?.client?.theme_color }}>US</span>
             </div>
             {/* Data before Integration / Your previous Data */}
             <div className="flex-cards">
@@ -21,8 +22,8 @@ const Cards = ({ page }) => {
                         <div className="logo">
                             <Logo className='icon' />
                         </div>
-                        <div className="heading">Certified Service Provider</div>
-                        <div className="para">We are a certified agency that provides quality bed bugs control facilities.</div>
+                        <div className="heading">{page?.obj?.service_heading1}</div>
+                        <div className="para">{page?.obj?.service_description1.replace(/<[^>]+>/g, '')}</div>
                     </div>
                 </Roll>
 
@@ -31,10 +32,10 @@ const Cards = ({ page }) => {
                         <div className="back_drop"></div>
 
                         <div className="logo">
-                            <Logo className='icon' />
+                            <Logo className='icon'/>
                         </div>
-                        <div className="heading"> Affordable Bed Bugs Treatment</div>
-                        <div className="para">For the valued customers, our service is highly market competitive.</div>
+                        <div className="heading">{page?.obj?.service_heading2}</div>
+                        <div className="para">{page?.obj?.service_description2.replace(/<[^>]+>/g, '')}</div>
                     </div>
                 </Roll>
                 <Roll left>
@@ -43,8 +44,8 @@ const Cards = ({ page }) => {
                         <div className="logo">
                             <Logo className='icon' />
                         </div>
-                        <div className="heading">Professional Workers</div>
-                        <div className="para">Our workers are licensed, and they are all highly professional and competent in their work.</div>
+                        <div className="heading">{page?.obj?.service_heading3}</div>
+                        <div className="para">{page?.obj?.service_description3.replace(/<[^>]+>/g, '')}</div>
                     </div>
                 </Roll>
                 <Roll left>
@@ -55,28 +56,11 @@ const Cards = ({ page }) => {
                         <div className="logo">
                             <Logo className='icon' />
                         </div>
-                        <div className="heading">Guaranteed Carpenter Ant Solution</div>
-                        <div className="para">Our service is guaranteed, and we assure you to give the best result; a place free of carpenter ants.</div>
+                        <div className="heading">{page?.obj?.service_heading4}</div>
+                        <div className="para">{page?.obj?.service_description4.replace(/<[^>]+>/g, '')}</div>
                     </div>
                 </Roll>
-
             </div>
-
-            {/* <div className="flex-cards">
-                {page?.landPage?.testimonails.map((data, i) => {
-                    return (
-                        <div className="card" key={i}>
-                            <div className="back_drop"></div>
-
-                            <div className="logo">
-                                <Logo className="icon" />
-                            </div>
-                            <div className="heading">{data?.username}</div>
-                            <div className="para">{data?.description}</div>
-                        </div>
-                    );
-                })}
-            </div> */}
         </div>
     );
 }

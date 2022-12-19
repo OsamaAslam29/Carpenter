@@ -14,8 +14,8 @@ const Gallery = ({ page }) => {
       <Fade bottom>
         <div className="content">
           <div className="flex-text">
-            <div></div>
-            <h3>Our Work</h3>
+            <div style={{backgroundColor:page?.landPage?.client?.theme_color}}></div>
+            <h3 style={{color:page?.landPage?.client?.theme_color}}>Our Work</h3>
           </div>
           <div className="data">
             <h4>Gallery</h4>
@@ -28,7 +28,8 @@ const Gallery = ({ page }) => {
             return (
               <div className='position' key={i}>
                 <div className="img">
-                  <img src={data.gallery_img} alt="" />
+                  {/* <img src={data.gallery_img} alt="" /> */}
+                  <img src={second} alt="" />
                 </div>
                 <a href={data.gallery_img}>
                   <AiOutlinePlus className='icon' />

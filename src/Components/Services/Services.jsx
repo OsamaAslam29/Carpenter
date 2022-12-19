@@ -9,11 +9,12 @@ const Services = ({ page }) => {
       <Fade bottom>
         <div className="content">
           <div className="flex-text">
-            <div></div>
-            <h3>Who We Are?</h3>
+            <div style={{backgroundColor:page?.landPage?.client?.theme_color}}></div>
+            <h3 style={{color:page?.landPage?.client?.theme_color}}>Who We Are?</h3>
           </div>
           <div className="data">
-            <h4>Services We <span>Offer</span></h4>
+            <h4>Services We <span
+            style={{color:page?.landPage?.client?.theme_color}}>Offer</span></h4>
           </div>
         </div>
       </Fade>
@@ -24,7 +25,7 @@ const Services = ({ page }) => {
               <div className="card" key={i}>
                 <div className="back_drop"></div>
                 <div className="logo">
-                  <Logo className='icon' />
+                  <Logo className='icon' style={{fill:page?.landPage?.client?.theme_color}}/>
                 </div>
                 <div className="heading">{data.service_img_title}</div>
                 <div className="para">{data.service_img_description.replace(/<[^>]+>/g, '')}</div>

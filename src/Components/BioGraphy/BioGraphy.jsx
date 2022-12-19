@@ -14,13 +14,12 @@ const BioGraphy = ({page}) => {
         </Zoom>
         <div className="content">
           <div className="flex-text">
-            <div></div>
-            <h3>Who We Are?</h3>
+            <div style={{backgroundColor:page?.landPage?.client?.theme_color}}></div>
+            <h3 style={{color:page?.landPage?.client?.theme_color}}>Who We Are?</h3>
           </div>
           <div className="data">
-            <h4>First Strike Pest Elimination</h4>
-            <p>
-              First Strike Pest Elimination is a certified company that provides professional bed bug exterminators at affordable prices. We have been working in the city for the last several years and offering people guaranteed carpenter ant treatment. Furthermore, our company is proud to announce that the whole workers of our agency are licensed. Besides, the customer is given excellent care and value here. The company tries to compensate quickly if anything goes wrong with any technician while giving service. Choose the best and feel the best!
+            <h4>{page?.obj?.about_heading}</h4>
+            <p>{page?.obj?.about_description.replace(/<[^>]+>/g, '')}
             </p>
           </div>
 

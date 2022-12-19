@@ -1,38 +1,12 @@
 import React from 'react'
 import "./NewTestimonials.scss";
-import { FaQuoteLeft } from 'react-icons/fa';
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import Bounce from 'react-reveal/Bounce';
 import { ImQuotesLeft } from 'react-icons/im';
 import { ImQuotesRight } from 'react-icons/im';
 import customer from "../../Assets/customer.svg"
 
-
-
-// const arr = [
-//   {
-//     para: "I highly recommend their service to anyone who needs carpenter ant treatment.",
-//     bio: "Shawn Potters",
-//     data: "Customer",
-//   },
-//   {
-//     para:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     bio: "CLIENT 1",
-//     data: "Customer",
-//   },
-//   {
-//     para:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     bio: "CLIENT 2",
-//     data: "Customer",
-//   },
-
-// ];
 
 const NewTestimonials = ({ sub }) => {
 
@@ -84,7 +58,7 @@ const NewTestimonials = ({ sub }) => {
               return (
                 <div className="tcards" key={i}>
                   <div className="testimonail-card">
-                    <ImQuotesLeft className='icon' />
+                    <ImQuotesLeft className='icon' style={{color:sub?.landPage?.client?.theme_color}}/>
                     <p>{data?.description.replace(/<(?:.|\n)*?>/gm, '')}</p>
                     <div className='border'></div>
                     <div className="profile">
@@ -94,7 +68,7 @@ const NewTestimonials = ({ sub }) => {
                         <p>customer</p>
                       </div>
                     </div>
-                    <ImQuotesRight className='icon' />
+                    <ImQuotesRight className='icon' style={{color:sub?.landPage?.client?.theme_color}}/>
 
                   </div>
                 </div>

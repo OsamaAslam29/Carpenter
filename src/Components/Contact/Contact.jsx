@@ -7,7 +7,7 @@ import Recaptcha from "react-google-recaptcha"
 import Fade from 'react-reveal/Fade';
 
 
-const Contact = ({page}) => {
+const Contact = ({ page }) => {
     function onChange(value) {
         console.log("Captcha value:", value);
     }
@@ -16,8 +16,8 @@ const Contact = ({page}) => {
             <Fade bottom>
                 <div className="content">
                     <div className="flex-text">
-                        <div></div>
-                        <h3>Keep In Touch</h3>
+                        <div style={{ backgroundColor: page?.landPage?.client?.theme_color }}></div>
+                        <h3 style={{ color: page?.landPage?.client?.theme_color }}>Keep In Touch</h3>
                     </div>
                     <div className="data">
                         <h4>Contact</h4>
@@ -29,10 +29,10 @@ const Contact = ({page}) => {
                     <div className="contact">
                         <div className="call">
                             <div className='flex-bio'>
-                                <FaPhoneVolume className='icon' />
+                                <FaPhoneVolume className='icon' style={{ fill: page?.landPage?.client?.theme_color }} />
                             </div>
                             <div className="flex-call">
-                                <h5>Call Us</h5>
+                                <h5 style={{ color: page?.landPage?.client?.theme_color }}>Call Us</h5>
                                 <a href={'tel:' + page?.landPage?.client?.phone_no}>
                                     {page?.landPage?.client?.phone_no}
                                 </a>
@@ -40,19 +40,19 @@ const Contact = ({page}) => {
                         </div>
                         <div className="call">
                             <div className='flex-bio'>
-                                <FaEnvelopeOpenText className='icon' />
+                                <FaEnvelopeOpenText className='icon' style={{ fill: page?.landPage?.client?.theme_color }} />
                             </div>
                             <div className="flex-call">
-                                <h5>Mail Us</h5>
+                                <h5 style={{ color: page?.landPage?.client?.theme_color }}>Mail Us</h5>
                                 <a href={'mailto:' + page?.landPage?.client?.email}>{page?.landPage?.client?.email}</a>
                             </div>
                         </div>
                         <div className="call">
                             <div className='flex-bio'>
-                                <FaMapMarkerAlt className='icon' />
+                                <FaMapMarkerAlt className='icon' style={{ fill: page?.landPage?.client?.theme_color }} />
                             </div>
                             <div className="flex-call">
-                                <h5>Office Address</h5>
+                                <h5 style={{ color: page?.landPage?.client?.theme_color }}>Office Address</h5>
                                 <a href={page?.landPage?.google_map}>{(page?.landPage?.address)}</a>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const Contact = ({page}) => {
                             />
                         </div>
                         <div className="send-button">
-                            <a href="#">Send Message</a>
+                            <a href="#" style={{ backgroundColor: page?.landPage?.client?.theme_color }}>Send Message</a>
                         </div>
                     </div>
                 </Fade>

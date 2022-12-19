@@ -20,36 +20,36 @@ const Footer = ({ page }) => {
                 <div className="footer">
                     <Bounce left>
                         <div className="contact">
-                            <div className="heading">Carpenter Ant Treatment in <br /> Woodstock GA </div>
+                            <div className="heading" style={{color :page?.landPage?.client?.theme_color}}>Carpenter Ant Treatment in <br /> Woodstock GA </div>
                             <div className="para">First Strike Pest Elimination</div>
                             <div className="info">
-                                <h3>Phone: <a href={'tel:' + page?.landPage?.client?.phone_no}> (470) 999-6819</a></h3>
+                                <h3>Phone: <a style={{color :page?.landPage?.client?.theme_color}} href={'tel:' + page?.landPage?.client?.phone_no}> (470) 999-6819</a></h3>
                                 <div className="flex">
                                     <h3>Email: </h3>
-                                    <a href={'mailto:' + page?.landPage?.client?.email}>ManuelCotrich@firststrikepestelimination.com</a>
+                                    <a style={{color :page?.landPage?.client?.theme_color}} href={'mailto:' + page?.landPage?.client?.email}>ManuelCotrich@firststrikepestelimination.com</a>
 
                                 </div>
-                                <h3>Text: &nbsp;&nbsp;<a href={'sms:' + page?.landPage?.client?.sms_no}> (470) 999-6819</a></h3>
+                                <h3>Text: &nbsp;&nbsp;<a style={{color :page?.landPage?.client?.theme_color}} href={'sms:' + page?.landPage?.client?.sms_no}> (470) 999-6819</a></h3>
                             </div>
                             <div className="icons">
                                 <a href={page?.landPage?.client?.youtube_link}>
-                                    <AiFillYoutube className='icon' />
+                                    <AiFillYoutube className='icon' style={{fill :page?.landPage?.client?.theme_color}} />
                                 </a>
                                 <a href={page?.landPage?.client?.website_link}>
 
-                                    <BsGlobe className='icon' />
+                                    <BsGlobe className='icon' style={{fill :page?.landPage?.client?.theme_color}} />
                                 </a>
                                 <a href={page?.landPage?.client?.instagram_link}>
-                                    <AiFillInstagram className='icon' />
+                                    <AiFillInstagram className='icon' style={{fill :page?.landPage?.client?.theme_color}} />
                                 </a>
                                 <a href={page?.landPage?.client?.yelp_link}>
-                                    <FaYelp className='icon' />
+                                    <FaYelp className='icon' style={{fill :page?.landPage?.client?.theme_color}} />
                                 </a>
                                 <a href={page?.landPage?.google_map}>
-                                    <BsGoogle className='icon' />
+                                    <BsGoogle className='icon' style={{fill :page?.landPage?.client?.theme_color}} />
                                 </a>
                                 <a href={page?.landPage?.client?.facebook_link}>
-                                    <FaFacebookF className='icon' />
+                                    <FaFacebookF className='icon' style={{fill :page?.landPage?.client?.theme_color}} />
                                 </a>
                             </div>
 
@@ -57,28 +57,28 @@ const Footer = ({ page }) => {
                     </Bounce>
                     <Bounce bottom>
                         <div className="links">
-                            <div className="heading">Related Links</div>
+                            <div className="heading"style={{color :page?.landPage?.client?.theme_color}}>Related Links</div>
                             <div className="icons" style={{ marginTop: "10px" }}>
                                 <div className="icon">
-                                    <FaAngleRight style={{ color: "var(--primary-color)" }} />
+                                    <FaAngleRight style={{color :page?.landPage?.client?.theme_color}}/>
                                     <a href='https://firmtechservices.com/199-Wasp-Removal-Service-Cartersville-GA'>
                                         Wasp Removal Service in Cartersville GA
                                     </a>
                                 </div>
                                 <div className="icon">
-                                    <FaAngleRight style={{ color: "var(--primary-color)" }} />
+                                    <FaAngleRight style={{color :page?.landPage?.client?.theme_color}}/>
                                     <a href='https://firmtechservices.com/199-Bee-Removal-Service-Marietta-GA'>
                                         Bee Removal Service in Marietta GA
                                     </a>
                                 </div>
                                 <div className="icon">
-                                    <FaAngleRight style={{ color: "var(--primary-color)" }} />
+                                    <FaAngleRight style={{color :page?.landPage?.client?.theme_color}} />
                                     <a href='https://firmtechservices.com/199-Bed-Bug-Control-Service-Kennesaw-GA'>
                                         Bed Bug Control Service in Kennesaw GA
                                     </a>
                                 </div>
                                 <div className="icon">
-                                    <FaAngleRight style={{ color: "var(--primary-color)" }} />
+                                    <FaAngleRight style={{color :page?.landPage?.client?.theme_color}}/>
                                     <a href='https://firmtechservices.com/199-Cockroach-Removal-Acworth-GA'>
                                         Cockroach Removal in Acworth GA
                                     </a>
@@ -94,7 +94,7 @@ const Footer = ({ page }) => {
                     </Bounce>
                 </div>
             </div>
-            <div className="footer-bar">
+            <div className="footer-bar" style={{backgroundColor :page?.landPage?.client?.theme_color}}>
                 <p>
                     © Copyright 2022 | Powered by <a href="https://firmtechservices.com/">FTS</a>. All Right Reserved.
                 </p>
