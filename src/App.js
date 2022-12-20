@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './App.scss';
 import BioGraphy from './Components/BioGraphy/BioGraphy';
@@ -15,20 +16,8 @@ function App() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    const url = "https://firmtechservices.com/api/177-24-Hour-Towing-Service-Tulsa-OK"
-
-    const fetchDate = async () => {
-      try {
-        const response = await fetch(url);
-        const json = await response.json();
-        console.log(json);
-        setData(json)
-      }
-      catch (error) {
-        console.log("Error", error)
-      }
-    }
-    fetchDate();
+    axios.get('https://firmtechservices.com/api/177-24-Hour-Towing-Service-Tulsa-OK')
+      .then(res => setData(res.data))
   }, [])
 
   return (

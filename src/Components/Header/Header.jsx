@@ -15,6 +15,7 @@ const Header = ({ page }) => {
     return (
         <Fade top>
             <div className='header-container' id='home' style={{backgroundColor:page?.landPage?.client?.theme_color}}>
+                
                 <div className="left-section">
                     {
                         page?.landPage?.address ?
@@ -91,6 +92,7 @@ const Header = ({ page }) => {
                         }
                     </div>
                 </div>
+                
             </div>
         </Fade>
     )

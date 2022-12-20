@@ -27,7 +27,6 @@ const Footer = ({ page }) => {
                                 <div className="flex">
                                     <h3>Email: </h3>
                                     <a style={{color :page?.landPage?.client?.theme_color}} href={'mailto:' + page?.landPage?.client?.email}>ManuelCotrich@firststrikepestelimination.com</a>
-
                                 </div>
                                 <h3>Text: &nbsp;&nbsp;<a style={{color :page?.landPage?.client?.theme_color}} href={'sms:' + page?.landPage?.client?.sms_no}> (470) 999-6819</a></h3>
                             </div>

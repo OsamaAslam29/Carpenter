@@ -4,46 +4,56 @@ import bio from '../../Assets/paracites.jpg'
 import Zoom from 'react-reveal/Zoom';
 
 
-const BioGraphy = ({page}) => {
+const BioGraphy = ({ page }) => {
   return (
     <>
-    <div className='Biography-container'>
-      <div className="flex-content">
-        <Zoom>
-          <img src={bio} alt="" />
-        </Zoom>
-        <div className="content">
-          <div className="flex-text">
-            <div style={{backgroundColor:page?.landPage?.client?.theme_color}}></div>
-            <h3 style={{color:page?.landPage?.client?.theme_color}}>Who We Are?</h3>
-          </div>
-          <div className="data">
-            <h4>{page?.obj?.about_heading}</h4>
-            <p>{page?.obj?.about_description.replace(/<[^>]+>/g, '')}
-            </p>
-          </div>
+      <div className='Biography-container'>
 
-        </div>
-      </div>
-      <div className="section">
-        <h2 className="heading">
-          Best Carpenter Ant Treatment in Woodstock GA
-        </h2>
-        <p>
-          Numerous ant species exist in Georgia's different cities. Moreover, the <strong>black carpenter ant </strong> is the most destructive type of species. That kind of ant lives in a moist and humid environment. They live in nests outside of residential and commercial areas. According to experts, the<strong> large black ants</strong> are ¼ inch long in size and can potentially spread infestation in your home while entering inside. Furthermore, they have a large jaw that helps them to eat other insects easily. Their favorite food is the other small insects and shaving wood, and they do so for better nourishment. So we provide the best <strong>carpenter ant treatment in Woodstock GA.</strong>
-        </p>
-        <p>
-          Contrary to carpenter ants do not eat wood. Rather they make the wood hollow and useless. <strong> Carpenter ants in the house </strong>make tunnels inside the wooden furniture. Their colonies are often found in humid places, water-damaged areas, and dead trees. <br />
 
-          However, it is necessary to take swift action against them so that the valuable furniture and the wood, which might have been kept for use in construction, remain safe from destruction. Suppose the situation is not controlled on time. The conditions of wood and the other decoration piece can deteriorate further. We provide different services to control pests in these areas:
-        </p>
-        <ul className="list">
-          <li><a href="https://firmtechservices.com/199-Bee-Removal-Service-Marietta-GA">Bee Removal Service in Marietta GA</a></li>
-          <li><a href="https://firmtechservices.com/199-Wasp-Removal-Service-Cartersville-GA">Wasp Removal Service in Cartersville GA</a></li>
-          <li><a href="https://firmtechservices.com/199-Cockroach-Removal-Acworth-GA">Cockroach Removal in Acworth GA</a></li>
-        </ul>
-      </div>
-      <div className="section">
+        {page?.landPage?.content.map((data, i) => {
+          return (
+            <>
+              <div className="flex-content">
+                <Zoom>
+                  <img src={bio} alt="" />
+                </Zoom>
+                <div className="content">
+                  <div className="flex-text">
+                    <div style={{ backgroundColor: page?.landPage?.client?.theme_color }}></div>
+                    <h3 style={{ color: page?.landPage?.client?.theme_color }}>Who We Are?</h3>
+                  </div>
+                  <div className="data">
+                    <h4>{page?.obj?.about_heading}</h4>
+                    <p>{page?.obj?.about_description.replace(/<[^>]+>/g, '')}
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+              <div className="section">
+                <h2 className="heading">{data?.content_img_title}</h2>
+                <p>
+                {data?.content_img_description}
+                </p>
+                {/* <p>
+                  Contrary to carpenter ants do not eat wood. Rather they make the wood hollow and useless. <strong> Carpenter ants in the house </strong>make tunnels inside the wooden furniture. Their colonies are often found in humid places, water-damaged areas, and dead trees. <br />
+
+                  However, it is necessary to take swift action against them so that the valuable furniture and the wood, which might have been kept for use in construction, remain safe from destruction. Suppose the situation is not controlled on time. The conditions of wood and the other decoration piece can deteriorate further. We provide different services to control pests in these areas:
+                </p>
+                <ul className="list">
+                  <li><a href="https://firmtechservices.com/199-Bee-Removal-Service-Marietta-GA">Bee Removal Service in Marietta GA</a></li>
+                  <li><a href="https://firmtechservices.com/199-Wasp-Removal-Service-Cartersville-GA">Wasp Removal Service in Cartersville GA</a></li>
+                  <li><a href="https://firmtechservices.com/199-Cockroach-Removal-Acworth-GA">Cockroach Removal in Acworth GA</a></li>
+                </ul> */}
+              </div>
+            </>
+          )
+        })}
+
+
+
+
+        {/* <div className="section">
         <h2 className="heading">
           Carpenter Ant Treatment Services in Woodstock GA
         </h2>
@@ -111,11 +121,11 @@ const BioGraphy = ({page}) => {
         <p id='services'>
           Most of the time, they live in woods, dead trees, and humid environments. However, they enter the room for searching food. Food particles attract them actively. Further, ants are found in domestic places around sinks, bathtubs, poorly sealed windows, and door frames. Therefore, keep an eye on all those areas often and on so that the place remains safe.
         </p>
+      </div> */}
+
+
+
       </div>
-
-
-
-    </div>
     </>
   )
 }

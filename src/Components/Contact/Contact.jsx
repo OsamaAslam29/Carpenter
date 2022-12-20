@@ -26,7 +26,7 @@ const Contact = ({ page }) => {
             </Fade>
             <div className="flex-forms">
                 <Fade bottom>
-                    <div className="contact">
+                    <div className="contact" style={{ borderColor: page?.landPage?.client?.theme_color }}>
                         <div className="call">
                             <div className='flex-bio'>
                                 <FaPhoneVolume className='icon' style={{ fill: page?.landPage?.client?.theme_color }} />
@@ -63,7 +63,7 @@ const Contact = ({ page }) => {
                     </div>
                 </Fade>
                 <Fade bottom>
-                    <div className="form">
+                    <div className="form" style={{ borderColor: page?.landPage?.client?.theme_color }}>
                         <div className="flex-input">
                             <input type="text" name="" id="" placeholder='Your Name' />
                             <input type="text" name="" id="" placeholder='Your Email' />
