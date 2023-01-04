@@ -30,9 +30,11 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const color = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
+    const color = getComputedStyle(document.documentElement).getPropertyValue('--bg-image');
     console.log(color)
     document.documentElement.style.setProperty('--primary-color', data?.landPage?.client?.theme_color);
+    document.documentElement.style.setProperty('--bg-image', `url ( "${data?.landPage?.client?.theme_color}" )`);
+    document.documentElement.style.setProperty('--bg-mobile', `url ( "${data?.landPage?.client?.theme_color}" )`);
   })
 
   return (

@@ -19,9 +19,10 @@ const BioGraphy = ({ page }) => {
         {page?.landPage?.content.map((data, i) => {
           return (
             <>
-              <div className="flex-content">
+              <div className="flex-content" key={i}>
                 <Zoom>
-                  <img src={bio} alt="" />
+                  {/* <img src={bio} alt="" /> */}
+                  <img src={data?.content_img} alt={data?.content_img_alt} />
                 </Zoom>
                 <div className="content">
                   <div className="flex-text">
