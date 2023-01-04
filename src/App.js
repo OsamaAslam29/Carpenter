@@ -17,8 +17,16 @@ function App() {
 
   useEffect(() => {
     axios.get('https://firmtechservices.com/api/177-24-Hour-Towing-Service-Tulsa-OK')
-      .then(res => setData(res.data))
+      .then(res => setData(res.data));
+
+
   }, [])
+
+  useEffect(() => {
+    const color = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
+    console.log(color)
+    document.documentElement.style.setProperty('--primary-color', data?.landPage?.client?.theme_color);
+  })
 
   return (
     <>
