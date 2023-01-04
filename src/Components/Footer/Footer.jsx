@@ -1,8 +1,6 @@
 import React from 'react'
-import './Footer.scss'
-import { MdLocationPin } from 'react-icons/md';
-import { IoIosMail } from 'react-icons/io';
-import { FaPhoneAlt } from 'react-icons/fa';
+import Bounce from 'react-reveal/Bounce';
+
 import { AiFillYoutube } from 'react-icons/ai';
 import { BsGlobe } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
@@ -10,7 +8,11 @@ import { FaYelp } from 'react-icons/fa';
 import { BsGoogle } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaAngleRight } from 'react-icons/fa';
-import Bounce from 'react-reveal/Bounce';
+
+import './Footer.scss'
+
+
+
 
 
 const Footer = ({ page }) => {

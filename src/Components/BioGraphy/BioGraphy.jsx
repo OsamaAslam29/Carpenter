@@ -1,7 +1,13 @@
 import React from 'react'
-import "./BioGraphy.scss"
+
 import bio from '../../Assets/paracites.jpg'
+
 import Zoom from 'react-reveal/Zoom';
+
+import "./BioGraphy.scss"
+
+
+
 
 
 const BioGraphy = ({ page }) => {

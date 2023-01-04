@@ -1,12 +1,14 @@
 import React from 'react'
-import "./NewTestimonials.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import { ImQuotesLeft } from 'react-icons/im';
 import { ImQuotesRight } from 'react-icons/im';
+
 import { ReactComponent as Customer } from '../../Assets/customer.svg';
 
+import "./NewTestimonials.scss";
 
 
 const NewTestimonials = ({ sub }) => {

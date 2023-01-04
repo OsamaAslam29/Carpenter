@@ -1,7 +1,13 @@
 import React from 'react'
-import './Services.scss'
-import { ReactComponent as Logo } from '../../Assets/box.svg';
 import Fade from 'react-reveal/Fade';
+
+import { ReactComponent as Logo } from '../../Assets/box.svg';
+
+import './Services.scss'
+
+
+
+
 
 const Services = ({ page }) => {
   return (

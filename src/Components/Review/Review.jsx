@@ -1,10 +1,13 @@
 import React from 'react'
-import './Review.scss'
-import review from '../../Assets/review.png'
-import { ImQuotesLeft } from 'react-icons/im';
-import { ImQuotesRight } from 'react-icons/im';
 import Fade from 'react-reveal/Fade';
+
+import review from '../../Assets/review.png'
 import NewTestimonials from '../NewTestimonials/NewTestimonials';
+
+import './Review.scss'
+
+
+
 
 
 const Review = ({ page }) => {

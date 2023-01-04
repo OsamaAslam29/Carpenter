@@ -1,5 +1,6 @@
 import React from 'react'
-import './Header.scss'
+import Fade from 'react-reveal/Fade';
+
 import { MdLocationPin } from 'react-icons/md';
 import { IoIosMail } from 'react-icons/io';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -9,7 +10,13 @@ import { AiFillInstagram } from 'react-icons/ai';
 import { FaYelp } from 'react-icons/fa';
 import { BsGoogle } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+
+import './Header.scss'
+
+
+
+
+
 
 const Header = ({ page }) => {
     return (

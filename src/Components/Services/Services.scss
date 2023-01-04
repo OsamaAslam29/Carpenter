@@ -44,7 +44,8 @@
                 @media screen and (max-width: 650px) {
                     font-size: 25px !important;
                 }
-                span{
+
+                span {
                     color: var(--primary-color);
                 }
             }
@@ -57,7 +58,7 @@
         gap: 1.2rem;
         padding: 3rem 0;
 
-        
+
         @media screen and (max-width: 1200px) {
             grid-template-columns: 1fr 1fr;
             padding: 3rem 20px;
@@ -94,16 +95,18 @@
                 margin-top: 500px;
                 z-index: -1;
             }
-            
+
             &:hover {
                 .back_drop {
                     margin-top: 0;
                 }
             }
+
             .icon {
                 transition: all 1s;
                 fill: var(--primary-color);
             }
+
             .heading {
                 font-size: 25px !important;
                 font-weight: 700 !important;
@@ -122,9 +125,11 @@
                 text-align: justify;
             }
         }
+
         .card:hover {
             color: white;
-            .icon{
+
+            .icon {
                 fill: white;
             }
         }

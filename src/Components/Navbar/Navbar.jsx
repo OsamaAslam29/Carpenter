@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
-import './Navbar.scss'
-import logo from '../../Assets/logo.png'
-import logos from '../../Assets/logos.png'
 
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+
+import logo from '../../Assets/logo.png'
+import logos from '../../Assets/logos.png'
+
 import Fade from 'react-reveal/Fade';
+
+import './Navbar.scss'
+
+
+
 
 
 const Navbar = ({ page }) => {

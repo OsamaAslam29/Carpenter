@@ -1,7 +1,12 @@
 import React from 'react'
-import './Cards.scss'
-import { ReactComponent as Logo } from '../../Assets/search.svg';
 import Roll from 'react-reveal/Roll';
+
+import { ReactComponent as Logo } from '../../Assets/search.svg';
+
+import './Cards.scss'
+
+
+
 
 
 const Cards = ({ page }) => {

@@ -1,8 +1,14 @@
 import React from 'react'
-import './Home.scss'
-import ModalVideo from 'react-modal-video'
 import { useState } from 'react'
+import ModalVideo from 'react-modal-video'
+
 import { AiOutlineCaretRight } from 'react-icons/ai';
+
+import './Home.scss'
+
+
+
+
 
 const Home = ({ page }) => {
   const [isOpen, setOpen] = useState(false)

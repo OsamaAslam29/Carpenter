@@ -1,6 +1,5 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import './App.scss';
+
 import BioGraphy from './Components/BioGraphy/BioGraphy';
 import Cards from './Components/Cards/Cards';
 import Contact from './Components/Contact/Contact';
@@ -11,6 +10,14 @@ import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Review from './Components/Review/Review';
 import Services from './Components/Services/Services';
+
+import axios from 'axios';
+
+import './App.scss';
+
+
+
+
 
 function App() {
   const [data, setData] = useState("");

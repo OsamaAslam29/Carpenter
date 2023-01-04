@@ -1,11 +1,16 @@
 import React from 'react'
-import './Gallery.scss'
+import Fade from 'react-reveal/Fade';
+import { AiOutlinePlus } from 'react-icons/ai';
+
 import first from '../../Assets/first.jpg'
 import second from '../../Assets/second.jpg'
 import third from '../../Assets/third.jpg'
-import { AiOutlinePlus } from 'react-icons/ai';
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
+
+import './Gallery.scss'
+
+
+
+
 
 
 const Gallery = ({ page }) => {

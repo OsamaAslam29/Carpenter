@@ -85,7 +85,7 @@
 
             img {
                 transition: all ease-in-out .3s;
-                
+
                 @media screen and (max-width:1200px) {
                     width: -webkit-fill-available;
                     height: -webkit-fill-available;
@@ -114,36 +114,40 @@
 
         .img:hover::before {
             opacity: 1;
-            
+
         }
 
         .img:hover img {
             transform: scale(1.2);
             transition: .3s;
-            
+
         }
 
 
-        .position{
+        .position {
             position: relative;
-            a{
+
+            a {
                 color: #fff;
                 position: absolute;
                 bottom: 10px;
                 left: 10px;
                 z-index: 2222;
                 display: none;
-                .icon{
+
+                .icon {
                     font-size: 30px;
                 }
             }
-            &:hover{
-                a{
+
+            &:hover {
+                a {
                     display: block;
                 }
+
                 .img::before {
                     opacity: 1;
-                    
+
                 }
             }
         }

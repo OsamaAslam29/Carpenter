@@ -1,10 +1,16 @@
 import React from 'react'
-import './Contact.scss'
+import Fade from 'react-reveal/Fade';
+import Recaptcha from "react-google-recaptcha"
+
 import { FaPhoneVolume } from 'react-icons/fa';
 import { FaEnvelopeOpenText } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import Recaptcha from "react-google-recaptcha"
-import Fade from 'react-reveal/Fade';
+
+
+import './Contact.scss'
+
+
+
 
 
 const Contact = ({ page }) => {
@@ -40,7 +46,7 @@ const Contact = ({ page }) => {
                         </div>
                         <div className="call">
                             <div className='flex-bio'>
-                                <FaEnvelopeOpenText className='icon'  />
+                                <FaEnvelopeOpenText className='icon' />
                             </div>
                             <div className="flex-call">
                                 <h5 >Mail Us</h5>
