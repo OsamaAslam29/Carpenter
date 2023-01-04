@@ -19,8 +19,8 @@ const BioGraphy = ({ page }) => {
                 </Zoom>
                 <div className="content">
                   <div className="flex-text">
-                    <div style={{ backgroundColor: page?.landPage?.client?.theme_color }}></div>
-                    <h3 style={{ color: page?.landPage?.client?.theme_color }}>Who We Are?</h3>
+                    <div></div>
+                    <h3>Who We Are?</h3>
                   </div>
                   <div className="data">
                     <h4>{page?.obj?.about_heading}</h4>
@@ -33,7 +33,7 @@ const BioGraphy = ({ page }) => {
               <div className="section">
                 <h2 className="heading">{data?.content_img_title}</h2>
                 <p>
-                {data?.content_img_description}
+                  {data?.content_img_description}
                 </p>
                 {/* <p>
                   Contrary to carpenter ants do not eat wood. Rather they make the wood hollow and useless. <strong> Carpenter ants in the house </strong>make tunnels inside the wooden furniture. Their colonies are often found in humid places, water-damaged areas, and dead trees. <br />

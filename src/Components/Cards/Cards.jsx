@@ -10,10 +10,8 @@ const Cards = ({ page }) => {
     return (
         <div className="card-container" id="about">
             <div className="heading-container">
-                WHY CHOOSE <span
-                    style={{ color: page?.landPage?.client?.theme_color }}>US</span>
+                WHY CHOOSE <span>US</span>
             </div>
-            {/* Data before Integration / Your previous Data */}
             <div className="flex-cards">
                 <Roll left>
                     <div className="card">

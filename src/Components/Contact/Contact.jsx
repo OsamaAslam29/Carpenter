@@ -16,8 +16,8 @@ const Contact = ({ page }) => {
             <Fade bottom>
                 <div className="content">
                     <div className="flex-text">
-                        <div style={{ backgroundColor: page?.landPage?.client?.theme_color }}></div>
-                        <h3 style={{ color: page?.landPage?.client?.theme_color }}>Keep In Touch</h3>
+                        <div></div>
+                        <h3>Keep In Touch</h3>
                     </div>
                     <div className="data">
                         <h4>Contact</h4>
@@ -26,13 +26,13 @@ const Contact = ({ page }) => {
             </Fade>
             <div className="flex-forms">
                 <Fade bottom>
-                    <div className="contact" style={{ borderColor: page?.landPage?.client?.theme_color }}>
+                    <div className="contact">
                         <div className="call">
                             <div className='flex-bio'>
-                                <FaPhoneVolume className='icon' style={{ fill: page?.landPage?.client?.theme_color }} />
+                                <FaPhoneVolume className='icon' />
                             </div>
                             <div className="flex-call">
-                                <h5 style={{ color: page?.landPage?.client?.theme_color }}>Call Us</h5>
+                                <h5>Call Us</h5>
                                 <a href={'tel:' + page?.landPage?.client?.phone_no}>
                                     {page?.landPage?.client?.phone_no}
                                 </a>
@@ -40,19 +40,19 @@ const Contact = ({ page }) => {
                         </div>
                         <div className="call">
                             <div className='flex-bio'>
-                                <FaEnvelopeOpenText className='icon' style={{ fill: page?.landPage?.client?.theme_color }} />
+                                <FaEnvelopeOpenText className='icon'  />
                             </div>
                             <div className="flex-call">
-                                <h5 style={{ color: page?.landPage?.client?.theme_color }}>Mail Us</h5>
+                                <h5 >Mail Us</h5>
                                 <a href={'mailto:' + page?.landPage?.client?.email}>{page?.landPage?.client?.email}</a>
                             </div>
                         </div>
                         <div className="call">
                             <div className='flex-bio'>
-                                <FaMapMarkerAlt className='icon' style={{ fill: page?.landPage?.client?.theme_color }} />
+                                <FaMapMarkerAlt className='icon' />
                             </div>
                             <div className="flex-call">
-                                <h5 style={{ color: page?.landPage?.client?.theme_color }}>Office Address</h5>
+                                <h5 >Office Address</h5>
                                 <a href={page?.landPage?.google_map}>{(page?.landPage?.address)}</a>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const Contact = ({ page }) => {
                     </div>
                 </Fade>
                 <Fade bottom>
-                    <div className="form" style={{ borderColor: page?.landPage?.client?.theme_color }}>
+                    <div className="form" >
                         <div className="flex-input">
                             <input type="text" name="" id="" placeholder='Your Name' />
                             <input type="text" name="" id="" placeholder='Your Email' />
@@ -82,7 +82,7 @@ const Contact = ({ page }) => {
                             />
                         </div>
                         <div className="send-button">
-                            <a href="#" style={{ backgroundColor: page?.landPage?.client?.theme_color }}>Send Message</a>
+                            <a href="#">Send Message</a>
                         </div>
                     </div>
                 </Fade>

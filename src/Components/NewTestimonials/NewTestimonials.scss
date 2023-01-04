@@ -72,6 +72,7 @@
 
 
       .icon {
+        color: var(--primary-color);
         font-size: 25px;
         margin-top: 5px;
 
@@ -91,9 +92,8 @@
         align-items: center;
         gap: 1rem;
 
-        img {
-          height: 60px;
-          width: 50px;
+        .fill {
+          fill: var(--primary-color);
         }
 
         .data {

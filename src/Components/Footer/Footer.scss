@@ -1,155 +1,172 @@
-.footer-container{
+.footer-container {
     background-color: #ededed;
-        padding: 40px 0px;
-        @media screen and (max-width: 650px) {
-            padding: 40px 20px;
+    padding: 40px 0px;
+
+    @media screen and (max-width: 650px) {
+        padding: 40px 20px;
 
 
-        }
-       
+    }
+
 
     .footer {
         display: flex;
         gap: 2rem;
         max-width: 1140px;
         margin: 0 auto;
+
         @media screen and (max-width: 1200px) {
             flex-direction: column;
             align-items: center;
             max-width: 400px;
 
         }
-    
+
         .contact {
             @media screen and (max-width: 1200px) {
                 padding: 0 20px;
             }
+
             @media screen and (max-width: 410px) {
                 padding: 0px;
             }
+
             .heading {
                 font-size: 25px !important;
                 font-weight: 700 !important;
                 color: var(--primary-color);
+
                 @media screen and (max-width: 650px) {
                     font-size: 20px !important;
 
                 }
             }
-    
+
             .para {
                 padding: 10px 0;
-                
-                
+
+
             }
-    
+
             .info {
                 margin-top: 1rem;
-                
 
-                .flex{
+
+                .flex {
                     display: flex;
                     align-items: center;
                     gap: .5rem;
+
                     a {
                         font-weight: 500;
                         color: var(--primary-color);
                         cursor: pointer;
                         font-size: 17px;
                         line-break: anywhere;
-    
+
                     }
                 }
-    
+
                 h3 {
                     padding: 4px 0;
+
                     @media screen and (max-width: 650px) {
                         font-size: 17px !important;
-    
+
                     }
+
                     a {
                         font-weight: 500;
                         color: var(--primary-color);
                         cursor: pointer;
                         font-size: 17px;
                         line-break: anywhere;
+
                         @media screen and (max-width: 650px) {
                             font-size: 15px !important;
-        
+
                         }
-    
+
                     }
                 }
             }
-    
+
             .icons {
                 margin-top: 1rem;
                 display: flex;
                 gap: 1rem;
-    
+
                 a {
                     background-color: #fff;
                     height: 35px;
                     width: 35px;
-                    color: #D44745;
+                    color: var(--primary-color);
                     text-align: center;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    
+
                 }
-    
+
                 a:hover {
                     color: blue;
                 }
             }
         }
-    
+
         .links {
             margin-top: 15px;
+
             @media screen and (max-width: 650px) {
                 padding-right: 21px;
 
             }
-    
+
             .heading {
                 font-size: 25px !important;
                 font-weight: 700 !important;
                 color: var(--primary-color);
+
                 @media screen and (max-width: 650px) {
                     font-size: 20px !important;
 
                 }
             }
-    
+
             .space {
                 margin-top: 20px;
-    
+
             }
-    
+
             .icon {
                 display: flex;
                 gap: .2rem;
                 padding: 5px 0;
-    
+
+                .links_icons {
+                    color: var(--primary-color);
+                }
+
                 a {
                     color: black;
+
                     @media screen and (max-width: 650px) {
                         font-size: 15px !important;
-    
+
                     }
+
                     &:hover {
-                        color: #D44745;
+                        color: var(--primary-color);
                     }
                 }
-    
-    
+
+
             }
         }
-    
+
     }
-    
+
 }
 
 
@@ -162,13 +179,15 @@
     p {
         text-align: center;
         color: white;
+
         @media screen and (max-width: 650px) {
             font-size: 12px;
         }
-        a{
+
+        a {
             color: #fff;
             font-weight: bold;
         }
-        
+
     }
 }

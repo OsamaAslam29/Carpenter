@@ -7,7 +7,6 @@ import Fade from 'react-reveal/Fade';
 import NewTestimonials from '../NewTestimonials/NewTestimonials';
 
 
-
 const Review = ({ page }) => {
     return (
         <div className='review-container' id='review'>
@@ -15,8 +14,8 @@ const Review = ({ page }) => {
 
                 <div className="content">
                     <div className="flex-text">
-                        <div style={{ backgroundColor: page?.landPage?.client?.theme_color }}></div>
-                        <h3 style={{ color: page?.landPage?.client?.theme_color }}>Google Review</h3>
+                        <div></div>
+                        <h3>Google Review</h3>
                     </div>
                     <div className="data">
                         <h4>Write a Review</h4>
@@ -24,11 +23,11 @@ const Review = ({ page }) => {
                 </div>
             </Fade>
             <div className='review'>
-                <img src={page?.landPage?.google_review} alt="Image not present in DB" />
-                {/* <img src={review} alt="Image not present in DB" /> */}
+                {/* <img src={page?.landPage?.google_review} alt="Image not present in DB" /> */}
+                <img src={review} alt="Image not present in DB" />
             </div>
             <div className="review-button">
-                <a style={{ backgroundColor: page?.landPage?.client?.theme_color }} href={page?.landPage?.review_slug}>Write a Review</a>
+                <a href={page?.landPage?.review_slug}>Write a Review</a>
             </div>
             <Fade bottom>
                 <div className="content" style={{ marginTop: "3rem" }}>

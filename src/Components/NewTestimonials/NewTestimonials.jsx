@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ImQuotesLeft } from 'react-icons/im';
 import { ImQuotesRight } from 'react-icons/im';
-import customer from "../../Assets/customer.svg"
+import { ReactComponent as Customer } from '../../Assets/customer.svg';
+
 
 
 const NewTestimonials = ({ sub }) => {
@@ -46,7 +47,7 @@ const NewTestimonials = ({ sub }) => {
   };
 
 
-  
+
 
   return (
     <>
@@ -58,18 +59,17 @@ const NewTestimonials = ({ sub }) => {
               return (
                 <div className="tcards" key={i}>
                   <div className="testimonail-card">
-                    <ImQuotesLeft className='icon' style={{color:sub?.landPage?.client?.theme_color}}/>
+                    <ImQuotesLeft className='icon' />
                     <p>{data?.description.replace(/<(?:.|\n)*?>/gm, '')}</p>
                     <div className='border'></div>
                     <div className="profile">
-                      <img src={customer} alt="" />
+                      <Customer className='fill' />
                       <div className="data">
                         <h5>{data?.username}</h5>
                         <p>customer</p>
                       </div>
                     </div>
-                    <ImQuotesRight className='icon' style={{color:sub?.landPage?.client?.theme_color}}/>
-
+                    <ImQuotesRight className='icon' />
                   </div>
                 </div>
               );
@@ -77,7 +77,7 @@ const NewTestimonials = ({ sub }) => {
           </Slider>
         </div>
 
-      <div id='contact'></div>
+        <div id='contact'></div>
       </div>
     </>
 
