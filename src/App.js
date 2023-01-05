@@ -21,16 +21,16 @@ import './App.scss';
 
 function App() {
   const [data, setData] = useState("");
-  const [loader, setLoader] = useState(false)
+  const [loader, setLoader] = useState(true)
 
 
   useEffect(() => {
 
+    axios.get('https://firmtechservices.com/api/177-24-Hour-Towing-Service-Tulsa-OK')
+      .then(res => setData(res.data));
+
     setTimeout(() => {
-      axios.get('https://firmtechservices.com/api/177-24-Hour-Towing-Service-Tulsa-OK')
-        .then(res => setData(res.data));
-        setLoader(false)
-        
+      setLoader(false)
     }, 2000);
 
   }, [])
@@ -45,16 +45,16 @@ function App() {
 
   return (
     <>
-      {/* <Header page={data} loding={loader} />
+      <Header page={data} loading={loader} />
       <Navbar page={data} />
-      <Home page={data} />
-      <Cards page={data} />
-      <BioGraphy page={data} /> */}
-      <Services page={data} loading={loader}/>
-      {/* <Gallery page={data} />
-       <Review page={data} /> 
+      <Home page={data} loading={loader} />
+      <Cards page={data} loading={loader} />
+      <BioGraphy page={data} />
+      <Services page={data} loading={loader} />
+      <Gallery page={data} />
+      {/* <Review page={data} /> */}
       <Contact page={data} />
-      <Footer page={data} /> */}
+      <Footer page={data} />
     </>
   );
 }

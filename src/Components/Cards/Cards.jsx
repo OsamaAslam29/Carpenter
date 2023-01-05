@@ -1,7 +1,10 @@
 import React from 'react'
 import Roll from 'react-reveal/Roll';
 
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+
 import { ReactComponent as Logo } from '../../Assets/search.svg';
+import CardsLoder from './CardsLoder/CardsLoder';
 
 import './Cards.scss'
 
@@ -9,7 +12,7 @@ import './Cards.scss'
 
 
 
-const Cards = ({ page }) => {
+const Cards = ({ page, loading }) => {
 
     console.log("page", page?.landPage?.testimonails);
     return (
@@ -19,49 +22,88 @@ const Cards = ({ page }) => {
             </div>
             <div className="flex-cards">
                 <Roll left>
-                    <div className="card">
-                        <div className="back_drop"></div>
+                    <SkeletonTheme baseColor="#e0e0e0" highlightColor="#fff">
+                        {
+                            loading
+                                ?
+                                <>
+                                    <CardsLoder />
+                                </>
+                                :
+                                <div className="card">
+                                    <div className="back_drop"></div>
 
-                        <div className="logo">
-                            <Logo className='icon' />
-                        </div>
-                        <div className="heading">{page?.obj?.service_heading1}</div>
-                        <div className="para">{page?.obj?.service_description1.replace(/<[^>]+>/g, '')}</div>
-                    </div>
-                </Roll>
-
-                <Roll left>
-                    <div className="card">
-                        <div className="back_drop"></div>
-
-                        <div className="logo">
-                            <Logo className='icon'/>
-                        </div>
-                        <div className="heading">{page?.obj?.service_heading2}</div>
-                        <div className="para">{page?.obj?.service_description2.replace(/<[^>]+>/g, '')}</div>
-                    </div>
+                                    <div className="logo">
+                                        <Logo className='icon' />
+                                    </div>
+                                    <div className="heading">{page?.obj?.service_heading1}</div>
+                                    <div className="para">{page?.obj?.service_description1.replace(/<[^>]+>/g, '')}</div>
+                                </div>
+                        }
+                    </SkeletonTheme>
                 </Roll>
                 <Roll left>
-                    <div className="card">
-                        <div className="back_drop"></div>
-                        <div className="logo">
-                            <Logo className='icon' />
-                        </div>
-                        <div className="heading">{page?.obj?.service_heading3}</div>
-                        <div className="para">{page?.obj?.service_description3.replace(/<[^>]+>/g, '')}</div>
-                    </div>
+                    <SkeletonTheme baseColor="#e0e0e0" highlightColor="#fff">
+                        {
+                            loading
+                                ?
+                                <>
+                                    <CardsLoder />
+                                </>
+                                :
+                                <div className="card">
+                                    <div className="back_drop"></div>
+
+                                    <div className="logo">
+                                        <Logo className='icon' />
+                                    </div>
+                                    <div className="heading">{page?.obj?.service_heading2}</div>
+                                    <div className="para">{page?.obj?.service_description2.replace(/<[^>]+>/g, '')}</div>
+                                </div>
+                        }
+                    </SkeletonTheme>
                 </Roll>
                 <Roll left>
-                    <div className="card">
+                    <SkeletonTheme baseColor="#e0e0e0" highlightColor="#fff">
+                        {
+                            loading
+                                ?
+                                <>
+                                    <CardsLoder />
+                                </>
+                                :
+                                <div className="card">
+                                    <div className="back_drop"></div>
 
-                        <div className="back_drop"></div>
+                                    <div className="logo">
+                                        <Logo className='icon' />
+                                    </div>
+                                    <div className="heading">{page?.obj?.service_heading3}</div>
+                                    <div className="para">{page?.obj?.service_description3.replace(/<[^>]+>/g, '')}</div>
+                                </div>
+                        }
+                    </SkeletonTheme>
+                </Roll>
+                <Roll left>
+                    <SkeletonTheme baseColor="#e0e0e0" highlightColor="#fff">
+                        {
+                            loading
+                                ?
+                                <>
+                                    <CardsLoder />
+                                </>
+                                :
+                                <div className="card">
+                                    <div className="back_drop"></div>
 
-                        <div className="logo">
-                            <Logo className='icon' />
-                        </div>
-                        <div className="heading">{page?.obj?.service_heading4}</div>
-                        <div className="para">{page?.obj?.service_description4.replace(/<[^>]+>/g, '')}</div>
-                    </div>
+                                    <div className="logo">
+                                        <Logo className='icon' />
+                                    </div>
+                                    <div className="heading">{page?.obj?.service_heading4}</div>
+                                    <div className="para">{page?.obj?.service_description4.replace(/<[^>]+>/g, '')}</div>
+                                </div>
+                        }
+                    </SkeletonTheme>
                 </Roll>
             </div>
         </div>

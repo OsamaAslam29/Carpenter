@@ -49,7 +49,8 @@
         }
 
         .card {
-            // min-height: 370px;
+            min-width: 280px;
+            min-height: 370px;
             display: flex;
             align-items: center;
             flex-direction: column;

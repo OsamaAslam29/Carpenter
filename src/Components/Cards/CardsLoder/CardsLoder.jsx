@@ -3,13 +3,9 @@ import React from 'react'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
-
-
-
-
-const ServiceLoder = () => {
-    return (
-        <div className="card">
+const CardsLoder = () => {
+  return (
+    <div className="card">
             <div className="logo"><Skeleton circle={true} height={100} width={100} /></div>
             <div className="heading">
                 <Skeleton
@@ -23,7 +19,7 @@ const ServiceLoder = () => {
                     width={200}
                 /></div>
         </div>
-    )
+  )
 }
 
-export default ServiceLoder
+export default CardsLoder

@@ -90,8 +90,8 @@ const Navbar = ({ page }) => {
         <Fade top>
             <div className={background ? 'nav-container color' : 'nav-container'}>
                 <div className="logo">
-                    {/* <img src={page?.landPage?.client?.logo} alt="" /> */}
-                    <img src={logo} alt="" />
+                    <img src={page?.landPage?.client?.logo} alt="" />
+                    {/* <img src={logo} alt="" /> */}
                 </div>
                 <div className="menu">
                     <div className="web-menu">

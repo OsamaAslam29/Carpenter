@@ -1,11 +1,11 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 
-import SkeletonTheme from 'react-loading-skeleton'
-
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import { ReactComponent as Logo } from '../../Assets/box.svg';
 
 import './Services.scss'
+
 
 import ServiceLoder from './ServicesLoder/ServiceLoder';
 import { useEffect } from 'react';
@@ -15,18 +15,7 @@ import { useState } from 'react';
 
 
 
-const Services = ({ page }) => {
-
-  const [service, setService] = useState(true)
-
-
-  useEffect(() => {
-    setTimeout(() => {
-      setService(false)
-    }, 3000);
-  })
-
-
+const Services = ({ page, loading }) => {
 
   return (
     <div className='services-container' id='services'>
@@ -45,7 +34,7 @@ const Services = ({ page }) => {
         <SkeletonTheme baseColor="#e0e0e0" highlightColor="#fff">
 
           {
-            service
+            loading
               ?
               <>
                 <ServiceLoder />
