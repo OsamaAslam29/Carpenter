@@ -11,6 +11,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Review from './Components/Review/Review';
 import Services from './Components/Services/Services';
 
+import Modal from './Components/Home/HomeLoder/Modal';
+
 import axios from 'axios';
 
 import './App.scss';
@@ -45,16 +47,17 @@ function App() {
 
   return (
     <>
-      <Header page={data} loading={loader} />
+      {/* <Modal/> */}
+       <Header page={data} loading={loader} />
       <Navbar page={data} />
       <Home page={data} loading={loader} />
-      <Cards page={data} loading={loader} />
+    {/*  <Cards page={data} loading={loader} />
       <BioGraphy page={data} />
       <Services page={data} loading={loader} />
-      <Gallery page={data} />
+      <Gallery page={data} /> */}
       {/* <Review page={data} /> */}
-      <Contact page={data} />
-      <Footer page={data} />
+      {/* <Contact page={data} />
+      <Footer page={data} /> */}
     </>
   );
 }

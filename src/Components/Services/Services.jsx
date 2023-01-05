@@ -1,15 +1,14 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import { SkeletonTheme } from 'react-loading-skeleton'
 import { ReactComponent as Logo } from '../../Assets/box.svg';
+
+import ServiceLoder from './ServicesLoder/ServiceLoder';
 
 import './Services.scss'
 
 
-import ServiceLoder from './ServicesLoder/ServiceLoder';
-import { useEffect } from 'react';
-import { useState } from 'react';
 
 
 

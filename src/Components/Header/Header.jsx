@@ -1,7 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import  { SkeletonTheme } from 'react-loading-skeleton'
 
 import { MdLocationPin } from 'react-icons/md';
 import { IoIosMail } from 'react-icons/io';

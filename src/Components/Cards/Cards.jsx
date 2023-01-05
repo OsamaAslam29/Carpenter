@@ -1,7 +1,7 @@
 import React from 'react'
 import Roll from 'react-reveal/Roll';
 
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import  { SkeletonTheme } from 'react-loading-skeleton'
 
 import { ReactComponent as Logo } from '../../Assets/search.svg';
 import CardsLoder from './CardsLoder/CardsLoder';
