@@ -45,7 +45,7 @@ const Navbar = ({ page }) => {
             <div className='main'>
                 <div className="logo">
                     <img src={page?.landPage?.client?.logo} alt="" />
-                    <img src={logo} alt="" />
+                    {/* <img src={logo} alt="" /> */}
                 </div>
                 <div className="nav">
                     <div className="mobile_icon" to="/Home">
