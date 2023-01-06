@@ -28,6 +28,7 @@ function App() {
 
   useEffect(() => {
 
+    // Fetch Api 
     axios.get('https://firmtechservices.com/api/177-24-Hour-Towing-Service-Tulsa-OK')
       .then(res => setData(res.data));
 
@@ -38,8 +39,12 @@ function App() {
   }, [])
 
   useEffect(() => {
+
+    // get value from css variable
     const color = getComputedStyle(document.documentElement).getPropertyValue('--bg-image');
     console.log(color)
+
+    // Set value into css variable
     document.documentElement.style.setProperty('--primary-color', data?.landPage?.client?.theme_color);
     document.documentElement.style.setProperty('--bg-image', `url ( "${data?.landPage?.client?.theme_color}" )`);
     document.documentElement.style.setProperty('--bg-mobile', `url ( "${data?.landPage?.client?.theme_color}" )`);
@@ -48,10 +53,10 @@ function App() {
   return (
     <>
       {/* <Modal/> */}
-       <Header page={data} loading={loader} />
+      <Header page={data} loading={loader} />
       <Navbar page={data} />
       <Home page={data} loading={loader} />
-    {/*  <Cards page={data} loading={loader} />
+      {/*  <Cards page={data} loading={loader} />
       <BioGraphy page={data} />
       <Services page={data} loading={loader} />
       <Gallery page={data} /> */}
